@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.HashMap;
 import javax.swing.JOptionPane;
 
 /**
@@ -22,8 +23,11 @@ public class Book {
 	private final String TITLE;
 	private final String AUTHOR;
 	private final String GENRE;
+	private final String RELEASEDATE;
 	private final String FILENAME;
+	private int totalWordCount;
 	private BufferedReader fileIn;
+	private HashMap<String,Integer> bookData;
 
 	/**
 	 *
@@ -32,12 +36,15 @@ public class Book {
 	 * @param genre the genre of the book being created
 	 * @param fileName the fileName of the book being created
 	 */
-	public Book(String title, String author,String genre,String fileName) {
+	public Book(String title, String author,String genre,String releaseDate,String fileName) {
 		this.TITLE = title;
 		this.AUTHOR = author;
 		this.GENRE = genre;
+		this.RELEASEDATE = releaseDate;
 		this.FILENAME = fileName;
 		this.fileIn = null;
+		this.totalWordCount = 0;
+		this.bookData = new HashMap<>();
 	}
 
 	// getters
@@ -56,6 +63,23 @@ public class Book {
 
 	public String getFilename() {
 		return FILENAME;
+	}
+
+	//setters
+	public void incrementWordCount(){
+		totalWordCount++;
+	}
+
+	/**
+	 *
+	 * @param s the string to be inserted into the hashmap
+	 */
+	public void addBookData(String s){
+		if (bookData.containsKey(s)) {
+			bookData.put(s,bookData.get(s)+1);
+		} else {
+			bookData.put(s,1);
+		}
 	}
 
 	/**
