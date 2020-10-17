@@ -43,6 +43,11 @@ public class Library {
 		}
 	}
 
+	/**
+	 *
+	 * @param index index of the book at that index or null if the library is empty
+	 * @return the book object at index of the ArrayList
+	 */
 	public Book getBook(int index) {
 		if (index >= 0 && index <= BOOKS.size() - 1) {
 			return BOOKS.get(index);

@@ -15,7 +15,6 @@ import javax.swing.JOptionPane;
  * 
  * @author Justin Raver
  */
-
 public class Book {
 
 	// instance variable
@@ -26,8 +25,13 @@ public class Book {
 	private final String FILENAME;
 	private BufferedReader fileIn;
 
-	// book constructor for default values
-
+	/**
+	 *
+	 * @param title the title of the book being created
+	 * @param author the author of the book being created
+	 * @param genre the genre of the book being created
+	 * @param fileName the fileName of the book being created
+	 */
 	public Book(String title, String author,String genre,String fileName) {
 		this.TITLE = title;
 		this.AUTHOR = author;
