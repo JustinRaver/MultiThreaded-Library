@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Set;
 import javax.swing.JOptionPane;
 
 /**
@@ -71,6 +72,10 @@ public class Book {
 
 	public int getTotalWordCount(){ return totalWordCount;}
 
+	public Set<String> getWords(){
+		return bookData.keySet();
+	}
+
 	//setters
 	public void incrementWordCount(){
 		totalWordCount++;
@@ -86,6 +91,7 @@ public class Book {
 		} else {
 			bookData.put(s,1);
 		}
+		incrementWordCount();
 	}
 
 	/**
