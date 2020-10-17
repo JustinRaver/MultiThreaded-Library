@@ -28,4 +28,15 @@ class BookTest {
     void isValid() {
         assertTrue(book.isValid());
     }
+
+    @Test
+    void getWordCount(){
+        assertEquals(0,book.getTotalWordCount());
+    }
+
+    @Test
+    void incrementWordCount(){
+        book.incrementWordCount();
+        assertEquals(1,book.getTotalWordCount());
+    }
 }

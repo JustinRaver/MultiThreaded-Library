@@ -2,7 +2,9 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import javax.swing.JOptionPane;
 
 /**
@@ -28,6 +30,7 @@ public class Book {
 	private int totalWordCount;
 	private BufferedReader fileIn;
 	private HashMap<String,Integer> bookData;
+	private List<String> topWordList;
 
 	/**
 	 *
@@ -45,6 +48,7 @@ public class Book {
 		this.fileIn = null;
 		this.totalWordCount = 0;
 		this.bookData = new HashMap<>();
+		//this.topWordList = new ArrayList<>(); use this later to create list of top(n) words in book
 	}
 
 	// getters
@@ -64,6 +68,8 @@ public class Book {
 	public String getFilename() {
 		return FILENAME;
 	}
+
+	public int getTotalWordCount(){ return totalWordCount;}
 
 	//setters
 	public void incrementWordCount(){
