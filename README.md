@@ -7,9 +7,9 @@
 ## Overview
 
 This program creates a Java GUI for a simple Library. This 
-library allows you to load a file from csv and view the correspoding 
+library allows you to load a file from csv and view the corresponding 
 books in the shape of BookButtons. Once the file is loaded you can 
-select the books and view thier material in the Reader area. 
+select the books and view their material in the Reader area. 
 
 ## Compiling and Running
 
@@ -36,7 +36,7 @@ The adjustment listener was interesting because it used so many unique methods t
 achieve its desired results. I used a notebook to write out the logic of the listener
 and then uses print statements to test the output of the different methods. Once I had 
 that information I was able to easily implement the methods and get the correct page 
-numbers. I also added my enable disable if else staments for the page up and down logic
+numbers. I also added my enable disable if else statements for the page up and down logic
 in the scrollBarListener so that it was automatically updated. 
 
 I tested the project consistently both with the front end and back end aspects. I realized 
