@@ -24,7 +24,7 @@ public class LibraryPanel extends JPanel {
 	private final JPanel BOOKBUTTONPANEL;
 	private final ActionListener BOOKBUTTONLISTENER;
 
-	/*
+	/**
 	 * LibraryPanel constructor that takes in Action listener as a parameter to
 	 * connect the BookButtons to the ReaderPanel
 	 */
