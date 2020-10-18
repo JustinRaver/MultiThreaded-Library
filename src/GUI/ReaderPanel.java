@@ -1,21 +1,17 @@
-import java.awt.BorderLayout;
-import java.awt.Dimension;
-import java.awt.Insets;
+package GUI;
+
+import Library.Book;
+
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.AdjustmentEvent;
 import java.awt.event.AdjustmentListener;
 import java.io.IOException;
-import javax.swing.BorderFactory;
-import javax.swing.JButton;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
 
 /**
- * ReaderPanel extends JPanel and is the bluePrint for a panel with an
+ * Panels.ReaderPanel extends JPanel and is the bluePrint for a panel with an
  * information area at the top, a Content area for displaying books in the
  * center, and a NavigationPanel with pageUp and Down buttons to navigate the
  * books in contentArea. It contains ActionListeners for the pageUP/Down Buttons
@@ -37,7 +33,7 @@ public class ReaderPanel extends JPanel {
 	private final JLabel PAGELABEL;
 	private final JTextArea CONTENTAREA;
 
-	// ReaderPanel constructor
+	// Panels.ReaderPanel constructor
 	public ReaderPanel() {
 		// sets layout to border layout and adds titled border
 		this.setLayout(new BorderLayout());
@@ -173,7 +169,7 @@ public class ReaderPanel extends JPanel {
 	 * This method takes in book objects as a parameter then uses the book class
 	 * method getTitle to set the text of titleLabel to the book title.
 	 * 
-	 * @param thisBook Book being passed to the title label
+	 * @param thisBook Library.Library.Book being passed to the title label
 	 */
 	public void setTitleLabel(Book thisBook) {
 		this.TITLELABEL.setText("Title: " + thisBook.getTitle());
@@ -183,7 +179,7 @@ public class ReaderPanel extends JPanel {
 	 * This method takes in book objects as a parameter then uses the book class
 	 * method getAuthor to set the text of byLabel to the books author.
 	 * 
-	 * @param thisBook Book object used to set the author label
+	 * @param thisBook Library.Library.Book object used to set the author label
 	 */
 	public void setByLabel(Book thisBook) {
 		this.BYLABEL.setText("By: " + thisBook.getAuthor());

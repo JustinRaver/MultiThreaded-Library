@@ -1,12 +1,14 @@
+package Library;
+
+import javax.swing.*;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
-import javax.swing.JOptionPane;
 
 /**
- * This class is the blueprint for an object called Book with the attributes
+ * This class is the blueprint for an object called Library.Library.Book with the attributes
  * title, author, genre, filename. The class includes getters and setters for
  * all of the methods. A toString that prints books attributes. A isValid method
  * that checks that the attributes aren't null and the file exists. The class
@@ -27,8 +29,8 @@ public class Book {
 	private final String FILENAME;
 	private int totalWordCount;
 	private BufferedReader fileIn;
-	private HashMap<String,Integer> bookData;
-	private List<String> topWordList;
+	private final HashMap<String,Integer> bookData;
+	private final List<String> topWordList;
 
 	/**
 	 *

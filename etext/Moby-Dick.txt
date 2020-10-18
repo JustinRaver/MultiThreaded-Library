@@ -332,7 +332,7 @@ Original Transcriber's Notes:
 This text is a combination of etexts, one from the now-defunct ERIS
 project at Virginia Tech and one from Project Gutenberg's archives. The
 proofreaders of this version are indebted to The University of Adelaide
-Library for preserving the Virginia Tech version. The resulting etext
+Library.Library for preserving the Virginia Tech version. The resulting etext
 was compared with a public domain hard copy version of the text.
 
 
@@ -367,7 +367,7 @@ was compared with a public domain hard copy version of the text.
   ,                 _Hebrew_.
   ,              _Greek_.
   CETUS,              _Latin_.
-  WH¼L,               _Anglo-Saxon_.
+  WHï¿½L,               _Anglo-Saxon_.
   HVALT,              _Danish_.
   WAL,                _Dutch_.
   HWAL,               _Swedish_.
@@ -2504,7 +2504,7 @@ off his swarthy brow, and the light leaping from his eye, made all his
 simple hearers look on him with a quick fear that was strange to them.
 
 There now came a lull in his look, as he silently turned over the
-leaves of the Book once more; and, at last, standing motionless, with
+leaves of the Library.Library.Book once more; and, at last, standing motionless, with
 closed eyes, for the moment, seemed communing with God and himself.
 
 But again he leaned over towards the people, and bowing his head lowly,
@@ -4813,7 +4813,7 @@ fleets? Why did Louis XVI. of France, at his own personal expense, fit
 out whaling ships from Dunkirk, and politely invite to that town some
 score or two of families from our own island of Nantucket? Why did
 Britain between the years 1750 and 1788 pay to her whalemen in bounties
-upwards of £1,000,000? And lastly, how comes it that we whalemen of
+upwards of ï¿½1,000,000? And lastly, how comes it that we whalemen of
 America now outnumber all the rest of the banded whalemen in the world;
 sail a navy of upwards of seven hundred vessels; manned by eighteen
 thousand men; yearly consuming 4,000,000 of dollars; the ships worth,
@@ -4877,7 +4877,7 @@ Japan, is ever to become hospitable, it is the whale-ship alone to whom
 the credit will be due; for already she is on the threshold.
 
 But if, in the face of all this, you still declare that whaling has no
-æsthetically noble associations connected with it, then am I ready to
+ï¿½sthetically noble associations connected with it, then am I ready to
 shiver fifty lances with you there, and unhorse you with a split helmet
 every time.
 
@@ -5618,8 +5618,8 @@ some small degree, with cetology, or the science of whales. Many are
 the men, small and great, old and new, landsmen and seamen, who have at
 large or in little, written of the whale. Run over a few:-The Authors
 of the Bible; Aristotle; Pliny; Aldrovandi; Sir Thomas Browne; Gesner;
-Ray; Linnæus; Rondeletius; Willoughby; Green; Artedi; Sibbald; Brisson;
-Marten; Lacépède; Bonneterre; Desmarest; Baron Cuvier; Frederick
+Ray; Linnï¿½us; Rondeletius; Willoughby; Green; Artedi; Sibbald; Brisson;
+Marten; Lacï¿½pï¿½de; Bonneterre; Desmarest; Baron Cuvier; Frederick
 Cuvier; John Hunter; Owen; Scoresby; Beale; Bennett; J. Ross Browne;
 the Author of Miriam Coffin; Olmstead; and the Rev. T. Cheever. But to
 what ultimate generalizing purpose all these have written, the above
@@ -5680,16 +5680,16 @@ are some preliminaries to settle.
 First: The uncertain, unsettled condition of this science of Cetology
 is in the very vestibule attested by the fact, that in some quarters it
 still remains a moot point whether a whale be a fish. In his System of
-Nature, A.D. 1776, Linnæus declares, "I hereby separate the whales from
+Nature, A.D. 1776, Linnï¿½us declares, "I hereby separate the whales from
 the fish." But of my own knowledge, I know that down to the year 1850,
-sharks and shad, alewives and herring, against Linnæus's express edict,
+sharks and shad, alewives and herring, against Linnï¿½us's express edict,
 were still found dividing the possession of the same seas with the
 Leviathan.
 
-The grounds upon which Linnæus would fain have banished the whales from
+The grounds upon which Linnï¿½us would fain have banished the whales from
 the waters, he states as follows: "On account of their warm bilocular
 heart, their lungs, their movable eyelids, their hollow ears, penem
-intrantem feminam mammis lactantem," and finally, "ex lege naturæ jure
+intrantem feminam mammis lactantem," and finally, "ex lege naturï¿½ jure
 meritoque." I submitted all this to my friends Simeon Macey and Charley
 Coffin, of Nantucket, both messmates of mine in a certain voyage, and
 they united in the opinion that the reasons set forth were altogether
@@ -5698,7 +5698,7 @@ insufficient. Charley profanely hinted they were humbug.
 Be it known that, waiving all argument, I take the good old fashioned
 ground that the whale is a fish, and call upon holy Jonah to back me.
 This fundamental thing settled, the next point is, in what internal
-respect does the whale differ from other fish. Above, Linnæus has given
+respect does the whale differ from other fish. Above, Linnï¿½us has given
 you those items. But in brief, they are these: lungs and warm blood;
 whereas, all other fish are lungless and cold blooded.
 
@@ -6232,7 +6232,7 @@ who in the rightly regal and intelligent spirit presides over his own
 private dinner-table of invited guests, that man's unchallenged power
 and dominion of individual influence for the time; that man's royalty
 of state transcends Belshazzar's, for Belshazzar was not the greatest.
-Who has but once dined his friends, has tasted what it is to be Cæsar.
+Who has but once dined his friends, has tasted what it is to be Cï¿½sar.
 It is a witchery of social czarship which there is no withstanding.
 Now, if to this consideration you superadd the official supremacy of a
 ship-master, then, by inference, you will derive the cause of that
@@ -6409,7 +6409,7 @@ stone mast of theirs may be said to have gone by the board, in the
 dread gale of God's wrath; therefore, we cannot give these Babel
 builders priority over the Egyptians. And that the Egyptians were a
 nation of mast-head standers, is an assertion based upon the general
-belief among archæologists, that the first pyramids were founded for
+belief among archï¿½ologists, that the first pyramids were founded for
 astronomical purposes: a theory singularly supported by the peculiar
 stair-like formation of all four sides of those edifices; whereby, with
 prodigious long upliftings of their legs, those old astronomers were
@@ -6570,7 +6570,7 @@ every time."
 And let me in this place movingly admonish you, ye ship-owners of
 Nantucket! Beware of enlisting in your vigilant fisheries any lad with
 lean brow and hollow eye; given to unseasonable meditativeness; and who
-offers to ship with the Phædon instead of Bowditch in his head. Beware
+offers to ship with the Phï¿½don instead of Bowditch in his head. Beware
 of such an one, I say; your whales must be seen before they can be
 killed; and this sunken-eyed young Platonist will tow you ten wakes
 round the world, and never make you one pint of sperm the richer. Nor
@@ -7335,7 +7335,7 @@ a mighty birth.
 No wonder, then, that ever gathering volume from the mere transit over
 the widest watery spaces, the outblown rumors of the White Whale did in
 the end incorporate with themselves all manner of morbid hints, and
-half-formed f½tal suggestions of supernatural agencies, which
+half-formed fï¿½tal suggestions of supernatural agencies, which
 eventually invested Moby Dick with new terrors unborrowed from anything
 that visibly appears. So that in many cases such a panic did he finally
 strike, that few who by those rumors, at least, had heard of the White
@@ -7641,7 +7641,7 @@ grand old kings of Pegu placing the title "Lord of the White Elephants"
 above all their other magniloquent ascriptions of dominion; and the
 modern kings of Siam unfurling the same snow-white quadruped in the
 royal standard; and the Hanoverian flag bearing the one figure of a
-snow-white charger; and the great Austrian Empire, Cæsarian, heir to
+snow-white charger; and the great Austrian Empire, Cï¿½sarian, heir to
 overlording Rome, having for the imperial colour the same imperial hue;
 and though this pre-eminence in it applies to the human race itself,
 giving the white man ideal mastership over every dusky tribe; and
@@ -8287,7 +8287,7 @@ But not only did each of these famous whales enjoy great individual
 celebrity-Nay, you may call it an ocean-wide renown; not only was he
 famous in life and now is immortal in forecastle stories after death,
 but he was admitted into all the rights, privileges, and distinctions
-of a name; had as much a name indeed as Cambyses or Cæsar. Was it not
+of a name; had as much a name indeed as Cambyses or Cï¿½sar. Was it not
 so, O Timor Tom! thou famed leviathan, scarred like an iceberg, who so
 long did'st lurk in the Oriental straits of that name, whose spout was
 oft seen from the palmy beach of Ombay? Was it not so, O New Zealand
@@ -8377,7 +8377,7 @@ directed his operations; he made two several attacks upon the ship, at
 a short interval between them, both of which, according to their
 direction, were calculated to do us the most injury, by being made
 ahead, and thereby combining the speed of the two objects for the
-shock; to effect which, the exact man½uvres which he made were
+shock; to effect which, the exact manï¿½uvres which he made were
 necessary. His aspect was most horrible, and such as indicated
 resentment and fury. He came directly from the shoal which we had just
 before entered, and in which we had struck three of his companions, as
@@ -10493,7 +10493,7 @@ this may grow too serious.'
 
 "'Will you be so good as to bring the priest also, Don?'
 
-"'Though there are no Auto-da-Fés in Lima now,' said one of the company
+"'Though there are no Auto-da-Fï¿½s in Lima now,' said one of the company
 to another; 'I fear our sailor friend runs risk of the archiepiscopacy.
 Let us withdraw more out of the moonlight. I see no need of this.'
 
@@ -10507,7 +10507,7 @@ you can.'
 Sebastian, gravely, returning with a tall and solemn figure.
 
 "'Let me remove my hat. Now, venerable priest, further into the light,
-and hold the Holy Book before me that I may touch it.
+and hold the Holy Library.Library.Book before me that I may touch it.
 
 "'So help me Heaven, and on my honor the story I have told ye,
 gentlemen, is in substance and its great items, true. I know it to be
@@ -10617,7 +10617,7 @@ narwhale, one glimpse at it is enough to amaze one, that in this
 nineteenth century such a hippogriff could be palmed for genuine upon
 any intelligent public of schoolboys.
 
-Then, again, in 1825, Bernard Germain, Count de Lacépède, a great
+Then, again, in 1825, Bernard Germain, Count de Lacï¿½pï¿½de, a great
 naturalist, published a scientific systemized whale book, wherein are
 several pictures of the different species of the Leviathan. All these
 are not only incorrect, but the picture of the Mysticetus or Greenland
@@ -11142,7 +11142,7 @@ much it may give it compactness and gloss.
 Of late years the Manilla rope has in the American fishery almost
 entirely superseded hemp as a material for whale-lines; for, though not
 so durable as hemp, it is stronger, and far more soft and elastic; and
-I will add (since there is an æsthetics in all things), is much more
+I will add (since there is an ï¿½sthetics in all things), is much more
 handsome and becoming to the boat, than hemp. Hemp is a dusky, dark
 fellow, a sort of Indian; but Manilla is as a golden-haired Circassian
 to behold.
@@ -11965,7 +11965,7 @@ salted down a lean missionary in his cellar against a coming famine; it
 will be more tolerable for that provident Fejee, I say, in the day of
 judgment, than for thee, civilized and enlightened gourmand, who
 nailest geese to the ground and feastest on their bloated livers in thy
-paté-de-foie-gras.
+patï¿½-de-foie-gras.
 
 But Stubb, he eats the whale by its own light, does he? and that is
 adding insult to injury, is it? Look at your knife-handle, there, my
@@ -13718,13 +13718,13 @@ exhilarating conception of what the most exalted potency is.
 But if from the comparative dimensions of the whale's proper brain, you
 deem it incapable of being adequately charted, then I have another idea
 for you. If you attentively regard almost any quadruped's spine, you
-will be struck with the resemblance of its vertebræ to a strung
+will be struck with the resemblance of its vertebrï¿½ to a strung
 necklace of dwarfed skulls, all bearing rudimental resemblance to the
-skull proper. It is a German conceit, that the vertebræ are absolutely
+skull proper. It is a German conceit, that the vertebrï¿½ are absolutely
 undeveloped skulls. But the curious external resemblance, I take it the
 Germans were not the first men to perceive. A foreign friend once
 pointed it out to me, in the skeleton of a foe he had slain, and with
-the vertebræ of which he was inlaying, in a sort of basso-relievo, the
+the vertebrï¿½ of which he was inlaying, in a sort of basso-relievo, the
 beaked prow of his canoe. Now, I consider that the phrenologists have
 omitted an important thing in not pushing their investigations from the
 cerebellum through the spinal canal. For I believe that much of a man's
@@ -13738,7 +13738,7 @@ Apply this spinal branch of phrenology to the Sperm Whale. His cranial
 cavity is continuous with the first neck-vertebra; and in that vertebra
 the bottom of the spinal canal will measure ten inches across, being
 eight in height, and of a triangular figure with the base downwards. As
-it passes through the remaining vertebræ the canal tapers in size, but
+it passes through the remaining vertebrï¿½ the canal tapers in size, but
 for a considerable distance remains of large capacity. Now, of course,
 this canal is filled with much the same strangely fibrous substance-the
 spinal cord-as the brain; and directly communicates with the brain. And
@@ -13753,7 +13753,7 @@ magnitude of his spinal cord.
 But leaving this hint to operate as it may with the phrenologists, I
 would merely assume the spinal theory for a moment, in reference to the
 Sperm Whale's hump. This august hump, if I mistake not, rises over one
-of the larger vertebræ, and is, therefore, in some sort, the outer
+of the larger vertebrï¿½, and is, therefore, in some sort, the outer
 convex mould of it. From its relative situation then, I should call
 this high hump the organ of firmness or indomitableness in the Sperm
 Whale. And that the great monster is indomitable, you will yet have
@@ -14266,7 +14266,7 @@ claim him for one of our clan.
 
 But, by the best contradictory authorities, this Grecian story of
 Hercules and the whale is considered to be derived from the still more
-ancient Hebrew story of Jonah and the whale; and vice versâ; certainly
+ancient Hebrew story of Jonah and the whale; and vice versï¿½; certainly
 they are very similar. If I claim the demi-god then, why not the
 prophet?
 
@@ -14401,7 +14401,7 @@ furious. What then remained?
 
 Of all the wondrous devices and dexterities, the sleights of hand and
 countless subtleties, to which the veteran whaleman is so often forced,
-none exceed that fine man½uvre with the lance called pitchpoling. Small
+none exceed that fine manï¿½uvre with the lance called pitchpoling. Small
 sword, or broad sword, in all its exercises boasts nothing like it. It
 is only indispensable with an inveterate running whale; its grand fact
 and feature is the wonderful distance to which the long lance is
@@ -15506,10 +15506,10 @@ mansion with a door-plate for a waif; what is that but a Fast-Fish?
 What is the ruinous discount which Mordecai, the broker, gets from poor
 Woebegone, the bankrupt, on a loan to keep Woebegone's family from
 starvation; what is that ruinous discount but a Fast-Fish? What is the
-Archbishop of Savesoul's income of £100,000 seized from the scant bread
+Archbishop of Savesoul's income of ï¿½100,000 seized from the scant bread
 and cheese of hundreds of thousands of broken-backed laborers (all sure
 of heaven without any of Savesoul's help) what is that globular
-£100,000 but a Fast-Fish? What are the Duke of Dunder's hereditary
+ï¿½100,000 but a Fast-Fish? What are the Duke of Dunder's hereditary
 towns and hamlets but Fast-Fish? What to that redoubted harpooneer,
 John Bull, is poor Ireland, but a Fast-Fish? What to that apostolic
 lancer, Brother Jonathan, is Texas but a Fast-Fish? And concerning all
@@ -15567,7 +15567,7 @@ them.
 
 Now when these poor sun-burnt mariners, bare-footed, and with their
 trowsers rolled high up on their eely legs, had wearily hauled their
-fat fish high and dry, promising themselves a good £150 from the
+fat fish high and dry, promising themselves a good ï¿½150 from the
 precious oil and bone; and in fantasy sipping rare tea with their
 wives, and good ale with their cronies, upon the strength of their
 respective shares; up steps a very learned and most Christian and
@@ -16327,7 +16327,7 @@ is; or, rather, in old times, its likeness was. Such an idol as that
 found in the secret groves of Queen Maachah in Judea; and for
 worshipping which, King Asa, her son, did depose her, and destroyed the
 idol, and burnt it for an abomination at the brook Kedron, as darkly
-set forth in the 15th chapter of the First Book of Kings.
+set forth in the 15th chapter of the First Library.Library.Book of Kings.
 
 Look at the sailor, called the mincer, who now comes along, and
 assisted by two allies, heavily backs the grandissimus, as the mariners
@@ -16766,7 +16766,7 @@ wonders; and the sun, he's always among 'em. Hem, hem, hem; here they
 are-here they go-all alive:-Aries, or the Ram; Taurus, or the Bull and
 Jimimi! here's Gemini himself, or the Twins. Well; the sun he wheels
 among 'em. Aye, here on the coin he's just crossing the threshold
-between two of twelve sitting-rooms all in a ring. Book! you lie there;
+between two of twelve sitting-rooms all in a ring. Library.Library.Book! you lie there;
 the fact is, you books must know your places. You'll do to give us the
 bare words and facts, but we come in to supply the thoughts. That's my
 small experience, so far as the Massachusetts calendar, and Bowditch's
@@ -17367,7 +17367,7 @@ glen not very far distant from what our sailors called Bamboo-Town, his
 capital.
 
 Among many other fine qualities, my royal friend Tranquo, being gifted
-with a devout love for all matters of barbaric vertù, had brought
+with a devout love for all matters of barbaric vertï¿½, had brought
 together in Pupella whatever rare things the more ingenious of his
 people could invent; chiefly carved woods of wonderful devices,
 chiselled shells, inlaid spears, costly paddles, aromatic canoes; and
@@ -17382,7 +17382,7 @@ its fathom-deep enfoldings, and the bones become dust dry in the sun,
 then the skeleton was carefully transported up the Pupella glen, where
 a grand temple of lordly palms now sheltered it.
 
-The ribs were hung with trophies; the vertebræ were carved with
+The ribs were hung with trophies; the vertebrï¿½ were carved with
 Arsacidean annals, in strange hieroglyphics; in the skull, the priests
 kept up an unextinguished aromatic flame, so that the mystic head again
 sent forth its vapory spout; while, suspended from a bough, the
@@ -17423,7 +17423,7 @@ god wived with youthful Life, and begat him curly-headed glories.
 Now, when with royal Tranquo I visited this wondrous whale, and saw the
 skull an altar, and the artificial smoke ascending from where the real
 jet had issued, I marvelled that the king should regard a chapel as an
-object of vertù. He laughed. But more I marvelled that the priests
+object of vertï¿½. He laughed. But more I marvelled that the priests
 should swear that smoky jet of his was genuine. To and fro I paced
 before this skeleton-brushed the vines aside-broke through the ribs-and
 with a ball of Arsacidean twine, wandered, eddied long amid its many
@@ -17557,7 +17557,7 @@ But the spine. For that, the best way we can consider it is, with a
 crane, to pile its bones high up on end. No speedy enterprise. But now
 it's done, it looks much like Pompey's Pillar.
 
-There are forty and odd vertebræ in all, which in the skeleton are not
+There are forty and odd vertebrï¿½ in all, which in the skeleton are not
 locked together. They mostly lie like the great knobbed blocks on a
 Gothic spire, forming solid courses of heavy masonry. The largest, a
 middle one, is in width something less than three feet, and in depth
@@ -17586,7 +17586,7 @@ approve myself omnisciently exhaustive in the enterprise; not
 overlooking the minutest seminal germs of his blood, and spinning him
 out to the uttermost coil of his bowels. Having already described him
 in most of his present habitatory and anatomical peculiarities, it now
-remains to magnify him in an archæological, fossiliferous, and
+remains to magnify him in an archï¿½ological, fossiliferous, and
 antediluvian point of view. Applied to any other creature than the
 Leviathan-to an ant or a flea-such portly terms might justly be deemed
 unwarrantably grandiloquent. But when Leviathan is the text, the case
@@ -17657,7 +17657,7 @@ extraordinary creatures which the mutations of the globe have blotted
 out of existence.
 
 When I stand among these mighty Leviathan skeletons, skulls, tusks,
-jaws, ribs, and vertebræ, all characterized by partial resemblances to
+jaws, ribs, and vertebrï¿½, all characterized by partial resemblances to
 the existing breeds of sea-monsters; but at the same time bearing on
 the other hand similar affinities to the annihilated antichronical
 Leviathans, their incalculable seniors; I am, by a flood, borne back to
@@ -17744,7 +17744,7 @@ Walks and Thames Tunnels of Whales! And even in the days of Banks and
 Solander, Cooke's naturalists, we find a Danish member of the Academy
 of Sciences setting down certain Iceland Whales (reydan-siskur, or
 Wrinkled Bellies) at one hundred and twenty yards; that is, three
-hundred and sixty feet. And Lacépède, the French naturalist, in his
+hundred and sixty feet. And Lacï¿½pï¿½de, the French naturalist, in his
 elaborate history of whales, in the very beginning of his work (page
 3), sets down the Right Whale at one hundred metres, three hundred and
 twenty-eight feet. And this work was published so late as A.D. 1825.
@@ -18199,7 +18199,7 @@ Here I am, proud as Greek god, and yet standing debtor to this
 blockhead for a bone to stand on! Cursed be that mortal
 inter-indebtedness which will not do away with ledgers. I would be free
 as air; and I'm down in the whole world's books. I am so rich, I could
-have given bid for bid with the wealthiest Prætorians at the auction of
+have given bid for bid with the wealthiest Prï¿½torians at the auction of
 the Roman empire (which was the world's); and yet I owe for the flesh
 in the tongue I brag with. By heavens! I'll get a crucible, and into
 it, and dissolve myself down to one small, compendious vertebra. So.
@@ -21296,7 +21296,7 @@ churning himself into furious speed, almost in an instant as it were,
 rushing among the boats with open jaws, and a lashing tail, offered
 appalling battle on every side; and heedless of the irons darted at him
 from every boat, seemed only intent on annihilating each separate plank
-of which those boats were made. But skilfully man½uvred, incessantly
+of which those boats were made. But skilfully manï¿½uvred, incessantly
 wheeling like trained chargers in the field; the boats for a while
 eluded him; though, at times, but by a plank's breadth; while all the
 time, Ahab's unearthly slogan tore every other cry but his to shreds.

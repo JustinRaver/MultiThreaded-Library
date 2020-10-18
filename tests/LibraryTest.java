@@ -1,3 +1,5 @@
+import Library.Library;
+import Library.Book;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

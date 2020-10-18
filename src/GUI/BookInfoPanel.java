@@ -1,3 +1,5 @@
+package GUI;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
@@ -6,18 +8,18 @@ import java.awt.event.ActionListener;
  *
  */
 public class BookInfoPanel extends JPanel {
-    private JPanel BOOKDATAPANEL;
-    private ActionListener DATALOADLISTENER;
-    private JTextField FILEENTRYFIELD;
+    private final JPanel BOOKDATAPANEL;
+    private final ActionListener DATALOADLISTENER;
+    private final JTextField FILEENTRYFIELD;
 
     public BookInfoPanel(ActionListener myListener){
         this.DATALOADLISTENER = myListener;
         this.setLayout(new BorderLayout());
-        this.setBorder(BorderFactory.createTitledBorder("Book Data"));
+        this.setBorder(BorderFactory.createTitledBorder("Library.Library.Book Data"));
         BOOKDATAPANEL = new JPanel();
         BOOKDATAPANEL.setLayout(new BoxLayout(BOOKDATAPANEL, BoxLayout.Y_AXIS));
         JScrollPane bookDataScrollPane = new JScrollPane(BOOKDATAPANEL);
-        bookDataScrollPane.setBorder(BorderFactory.createTitledBorder("Book Stats"));
+        bookDataScrollPane.setBorder(BorderFactory.createTitledBorder("Library.Library.Book Stats"));
         bookDataScrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
         bookDataScrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 

@@ -1,13 +1,17 @@
+package GUI;
+
+import Library.Library;
+import Library.Book;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 /**
- * LibraryPanel extends JPanel and is the blue print for a panel With a
+ * Panels.LibraryPanel extends JPanel and is the blue print for a panel With a
  * JScrollPane for bookButtons and an ImportBooks panel containing a JTextField
  * for File entry and a Load Button to load the desired file. Files are loaded
- * using the csvLoad method from Library and sends and error message to user if
+ * using the csvLoad method from Library.Library and sends and error message to user if
  * invalid input is entered. BorderLayout is used for style purposes along with
  * Titled Borders. The BookButtons are stacked using a GridLayout.
  * 
@@ -25,13 +29,13 @@ public class LibraryPanel extends JPanel {
 	private final ActionListener BOOKBUTTONLISTENER;
 
 	/**
-	 * LibraryPanel constructor that takes in Action listener as a parameter to
-	 * connect the BookButtons to the ReaderPanel
+	 * Panels.LibraryPanel constructor that takes in Action listener as a parameter to
+	 * connect the BookButtons to the Panels.ReaderPanel
 	 */
 	public LibraryPanel(ActionListener myListener) {
-		// sets ActionListener instance to the BOOKBUTTONLISTENER in ReaderOfBooksPanel.
+		// sets ActionListener instance to the BOOKBUTTONLISTENER in Panels.ReaderOfBooksPanel.
 		this.BOOKBUTTONLISTENER = myListener;
-		// sets the layout of LibraryPanel and adds a titled border
+		// sets the layout of Panels.LibraryPanel and adds a titled border
 		this.setLayout(new BorderLayout());
 		this.setBorder(BorderFactory.createTitledBorder("Library"));
 		// creates new library object to add book objects to
@@ -46,7 +50,7 @@ public class LibraryPanel extends JPanel {
 		 * scroll.
 		 */
 		JScrollPane bookListScrollPane = new JScrollPane(BOOKBUTTONPANEL);
-		bookListScrollPane.setBorder(BorderFactory.createTitledBorder("Book List"));
+		bookListScrollPane.setBorder(BorderFactory.createTitledBorder("Library.Library.Book List"));
 		bookListScrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
 		bookListScrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 		// creates panel for book imports
@@ -61,9 +65,9 @@ public class LibraryPanel extends JPanel {
 		loadButton.addActionListener(new LoadButtonListener());
 		loadButton.setToolTipText("Load your desired CSV file");
 		importBookPanel.add(loadButton);
-		// adds the bookListScrollPane to LibraryPanel
+		// adds the bookListScrollPane to Panels.LibraryPanel
 		this.add(bookListScrollPane, BorderLayout.CENTER);
-		// adds the importBookPanel to LibraryPanel
+		// adds the importBookPanel to Panels.LibraryPanel
 		this.add(importBookPanel, BorderLayout.SOUTH);
 
 	}
@@ -72,9 +76,9 @@ public class LibraryPanel extends JPanel {
 	 * This listener connected to loadButton in the importBookPanel and
 	 * fileEntryField gets the text from the entry field and loads file to myLibrary
 	 * using the library CSV load method. Once myLibrary is populated a for loop
-	 * iterates through the book objects and creates BookButton objects for each
-	 * book. BookButtonListener is added to the BookButton objects and the
-	 * BookButton objects are added to the bookButtonPanel
+	 * iterates through the book objects and creates GUI.BookButton objects for each
+	 * book. BookButtonListener is added to the GUI.BookButton objects and the
+	 * GUI.BookButton objects are added to the bookButtonPanel
 	 */
 	private class LoadButtonListener implements ActionListener {
 		@Override

@@ -1,12 +1,13 @@
+package Library;
+
+import javax.swing.*;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import javax.swing.JOptionPane;
-
 /**
- * This class is the blueprint for Library objects. This object has an ArrayList
+ * This class is the blueprint for Library.Library objects. This object has an ArrayList
  * attribute that takes in objects of type book. The methods getBooks, getBook,
  * addBooks,removeBook, and toString methods allow you to add books, get the
  * book locations in index form, remove book at a specific index, and print the

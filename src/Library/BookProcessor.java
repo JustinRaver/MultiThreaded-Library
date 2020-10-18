@@ -1,10 +1,12 @@
+package Library;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.HashSet;
 import java.util.Scanner;
 
 public class BookProcessor {
-    private int numBooksProcessed;
+    private final int numBooksProcessed;
     private HashSet<String> invalidSet;
     private long executionTime;
 
@@ -59,7 +61,7 @@ public class BookProcessor {
         return str.replaceAll(" +", " ");
     }
 
-    public void countWords(String str,Book book){
+    public void countWords(String str, Book book){
         for(String s:str.split(" ")){
             if(s.equals("")){
                 continue;

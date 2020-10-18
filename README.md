@@ -1,12 +1,12 @@
  
-# Project #: ReaderOfBooks 
+# Project #: Main.ReaderOfBooks 
 * Author: Justin Raver
 * Class: CS121 Section #03
 * Semester: Spring 2019
 
 ## Overview
 
-This program creates a Java GUI for a simple Library. This 
+This program creates a Java GUI for a simple Library.Library. This 
 library allows you to load a file from csv and view the corresponding 
 books in the shape of BookButtons. Once the file is loaded you can 
 select the books and view their material in the Reader area. 
@@ -16,20 +16,20 @@ select the books and view their material in the Reader area.
  All project files should be in the same directory.
  
  From the directory containing the .java source code, compile the driver class:
-    $ javac ReaderOfBooks.javac
+    $ javac Main.ReaderOfBooks.javac
 
 Run the program
-    $ java ReaderOfBooks
+    $ java Main.ReaderOfBooks
  
 ## Reflection (Project Development and Testing)
 
-The ReaderOfBooks project has been an excellent test of patience and problem solving. 
+The Main.ReaderOfBooks project has been an excellent test of patience and problem solving. 
 I consistently struggled with this project. My first large stumble was with the 
 BookButtonListener and how to pass the listener to from a toplevel class to a sub class 
-LibraryPanel. I was able to resolve the Action listener by passing in through the
-constructor of LibraryPanel and creating an instance of ActionListener set equal to 
+GUI.LibraryPanel. I was able to resolve the Action listener by passing in through the
+constructor of GUI.LibraryPanel and creating an instance of ActionListener set equal to 
 the listener passed through the library panel constructor. I also struggled with the 
-alignment of the BookButtons,the JLabels, and other components within the Panels. 
+alignment of the BookButtons,the JLabels, and other components within the GUI. 
 Through reading the Java api I was able to resolve my style issues. 
 
 The adjustment listener was interesting because it used so many unique methods to 
