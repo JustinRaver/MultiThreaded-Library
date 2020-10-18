@@ -90,12 +90,7 @@ public class Book {
 	 * @param s the string to be inserted into the hashmap
 	 */
 	public void addBookData(String s){
-		if (bookData.containsKey(s)) {
-			int value = bookData.get(s)+1;
-			bookData.put(s,value);
-		} else {
-			bookData.put(s,1);
-		}
+		bookData.put(s,bookData.getOrDefault(s,0)+1);
 		incrementWordCount();
 	}
 
@@ -104,11 +99,7 @@ public class Book {
 	 * @return String
 	 */
 	public String toString() {
-		String attributes;
-
-		attributes = (" Title: " + TITLE + " Author: " + AUTHOR + " Genre: " + GENRE + " FileName: " + FILENAME);
-
-		return attributes;
+		return (" Title: " + TITLE + " Author: " + AUTHOR + " Genre: " + GENRE + " FileName: " + FILENAME);
 	}
 
 	/**
@@ -116,18 +107,12 @@ public class Book {
 	 * @return boolean
 	 */
 	public boolean isValid() {
-		boolean myBool = false;
 
 		if (TITLE != null && AUTHOR != null && GENRE != null && FILENAME != null) {
 			File file = new File(FILENAME);
-
-			if (file.exists() && file.isFile()) {
-				myBool = true;
-			}
-			return myBool;
-		} else {
-			return false;
+			return file.exists() && file.isFile();
 		}
+		return false;
 	}
 
 	/**

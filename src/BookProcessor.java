@@ -1,17 +1,15 @@
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.*;
-import java.util.stream.Stream;
+import java.util.HashSet;
+import java.util.Scanner;
 
 public class BookProcessor {
     private int numBooksProcessed;
-    private List<Book> booksProcessed;
     private HashSet<String> invalidSet;
     private long executionTime;
 
     public BookProcessor(){
         numBooksProcessed = 0;
-        booksProcessed = new ArrayList<>();
         invalidSet = null;
         executionTime = 0;
     }
