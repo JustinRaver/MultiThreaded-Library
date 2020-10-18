@@ -25,8 +25,7 @@ public class BookProcessor {
                 Scanner lineScan = new Scanner(scan.nextLine());
                 lineScan.useDelimiter(",");
                 while(lineScan.hasNext()){
-                    String word = lineScan.next().toLowerCase();
-                    set.add(word);
+                    set.add(lineScan.next().toLowerCase());
                 }
             }
         } catch (FileNotFoundException e) {
@@ -42,10 +41,8 @@ public class BookProcessor {
             //Starting execution timer
             executionTime = System.nanoTime();
             while(scan.hasNextLine()){
-                String s = scan.nextLine();
                 //non case sensitive word matching
-                s = s.toLowerCase();
-                countWords(cleanString(s), book);
+                countWords(cleanString(scan.nextLine().toLowerCase()), book);
             }
             //execution time in milliseconds
             executionTime = (System.nanoTime()-executionTime)/1000000;
@@ -64,7 +61,7 @@ public class BookProcessor {
             if(s.equals("")){
                 continue;
             }
-            if(invalidSet == null ||  !invalidSet.contains(s)) {
+            if(invalidSet == null || !invalidSet.contains(s)) {
                 book.addBookData(s);
             }
         }
