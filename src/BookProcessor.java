@@ -63,6 +63,9 @@ public class BookProcessor {
 
     public void countWords(String str,Book book){
         for(String s:str.split(" ")){
+            if(s.equals("")){
+                continue;
+            }
             if(invalidSet == null ||  !invalidSet.contains(s)) {
                 book.addBookData(s);
             }

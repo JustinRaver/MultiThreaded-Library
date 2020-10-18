@@ -2,10 +2,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import javax.swing.JOptionPane;
 
 /**
@@ -49,7 +46,7 @@ public class Book {
 		this.fileIn = null;
 		this.totalWordCount = 0;
 		this.bookData = new HashMap<>();
-		//this.topWordList = new ArrayList<>(); use this later to create list of top(n) words in book
+		this.topWordList = new ArrayList<>();
 	}
 
 	// getters
@@ -70,10 +67,8 @@ public class Book {
 		return FILENAME;
 	}
 
-	public int getTotalWordCount(){ return totalWordCount;}
-
-	public Set<String> getWords(){
-		return bookData.keySet();
+	public String getRELEASEDATE(){
+		return RELEASEDATE;
 	}
 
 	//setters
@@ -81,13 +76,23 @@ public class Book {
 		totalWordCount++;
 	}
 
+	public int getTotalWordCount(){ return totalWordCount;}
+
+	public Set<String> getWords(){
+		return bookData.keySet();
+	}
+
+	public List<String> getTopWordList(){
+		return topWordList;
+	}
 	/**
 	 *
 	 * @param s the string to be inserted into the hashmap
 	 */
 	public void addBookData(String s){
 		if (bookData.containsKey(s)) {
-			bookData.put(s,bookData.get(s)+1);
+			int value = bookData.get(s)+1;
+			bookData.put(s,value);
 		} else {
 			bookData.put(s,1);
 		}
