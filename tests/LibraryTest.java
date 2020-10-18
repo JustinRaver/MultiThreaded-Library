@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class LibraryTest {
     Library library = new Library();
-    Book book = new Book("ALICE'S ADVENTURES IN WONDERLAND","Lewis Carroll","Adventure","etext/Alice-in-Wonderland.txt");
+    Book book = new Book("ALICE'S ADVENTURES IN WONDERLAND","Lewis Carroll","Adventure","1865","etext/Alice-in-Wonderland.txt");
 
     @Test
     void getBooks() {

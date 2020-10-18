@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.*;
 import javax.swing.JOptionPane;
 
 /**
@@ -15,7 +16,6 @@ import javax.swing.JOptionPane;
  * 
  * @author Justin Raver
  */
-
 public class Book {
 
 	// instance variable
@@ -23,17 +23,30 @@ public class Book {
 	private final String TITLE;
 	private final String AUTHOR;
 	private final String GENRE;
+	private final String RELEASEDATE;
 	private final String FILENAME;
+	private int totalWordCount;
 	private BufferedReader fileIn;
+	private HashMap<String,Integer> bookData;
+	private List<String> topWordList;
 
-	// book constructor for default values
-
-	public Book(String title, String author,String genre,String fileName) {
+	/**
+	 *
+	 * @param title the title of the book being created
+	 * @param author the author of the book being created
+	 * @param genre the genre of the book being created
+	 * @param fileName the fileName of the book being created
+	 */
+	public Book(String title, String author,String genre,String releaseDate,String fileName) {
 		this.TITLE = title;
 		this.AUTHOR = author;
 		this.GENRE = genre;
+		this.RELEASEDATE = releaseDate;
 		this.FILENAME = fileName;
 		this.fileIn = null;
+		this.totalWordCount = 0;
+		this.bookData = new HashMap<>();
+		this.topWordList = new ArrayList<>();
 	}
 
 	// getters
@@ -52,6 +65,38 @@ public class Book {
 
 	public String getFilename() {
 		return FILENAME;
+	}
+
+	public String getRELEASEDATE(){
+		return RELEASEDATE;
+	}
+
+	//setters
+	public void incrementWordCount(){
+		totalWordCount++;
+	}
+
+	public int getTotalWordCount(){ return totalWordCount;}
+
+	public Set<String> getWords(){
+		return bookData.keySet();
+	}
+
+	public List<String> getTopWordList(){
+		return topWordList;
+	}
+	/**
+	 *
+	 * @param s the string to be inserted into the hashmap
+	 */
+	public void addBookData(String s){
+		if (bookData.containsKey(s)) {
+			int value = bookData.get(s)+1;
+			bookData.put(s,value);
+		} else {
+			bookData.put(s,1);
+		}
+		incrementWordCount();
 	}
 
 	/**

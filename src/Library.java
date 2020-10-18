@@ -37,12 +37,21 @@ public class Library {
 		BOOKS.add(newBook);
 	}
 
+	/**
+	 *
+	 * @param index removes book at this index
+	 */
 	public void removeBook(int index) {
 		if (index >= 0 && index <= BOOKS.size() - 1) {
 			BOOKS.remove(index);
 		}
 	}
 
+	/**
+	 *
+	 * @param index index of the book at that index or null if the library is empty
+	 * @return the book object at index of the ArrayList
+	 */
 	public Book getBook(int index) {
 		if (index >= 0 && index <= BOOKS.size() - 1) {
 			return BOOKS.get(index);
@@ -72,17 +81,10 @@ public class Library {
 
 			while (fileScan.hasNextLine()) {
 
-				String line = fileScan.nextLine();
-
-				Scanner lineScan = new Scanner(line);
+				Scanner lineScan = new Scanner(fileScan.nextLine());
 				lineScan.useDelimiter(",");
-
-				String title = lineScan.next();
-				String author = lineScan.next();
-				String genre = lineScan.next();
-				String filePath = lineScan.next();
-
-				Book csvBook = new Book(title, author,genre,filePath);
+				//creating book object using csv data
+				Book csvBook = new Book(lineScan.next(), lineScan.next(),lineScan.next(),lineScan.next(),lineScan.next());
 				BOOKS.add(csvBook);
 
 				lineScan.close();
