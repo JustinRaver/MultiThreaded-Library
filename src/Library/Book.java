@@ -27,7 +27,8 @@ public class Book {
 	private final String GENRE;
 	private final String RELEASEDATE;
 	private final String FILENAME;
-	private int totalWordCount;
+	private int wordCount;
+	private int lineCount;
 	private BufferedReader fileIn;
 	private final HashMap<String,Integer> bookData;
 
@@ -45,7 +46,8 @@ public class Book {
 		this.RELEASEDATE = releaseDate;
 		this.FILENAME = fileName;
 		this.fileIn = null;
-		this.totalWordCount = 0;
+		this.wordCount = 0;
+		this.lineCount = 0;
 		this.bookData = new HashMap<>();
 	}
 
@@ -74,17 +76,24 @@ public class Book {
 	public HashMap<String,Integer> getBookData(){
 		return this.bookData;
 	}
+	public int getWordCount(){ return wordCount;}
+
+	public int getLineCount(){
+		return this.lineCount;
+	}
+
+	public Set<String> getWords(){
+		return bookData.keySet();
+	}
 
 
 	//setters
 	public void incrementWordCount(){
-		totalWordCount++;
+		wordCount++;
 	}
 
-	public int getTotalWordCount(){ return totalWordCount;}
-
-	public Set<String> getWords(){
-		return bookData.keySet();
+	public void incrementLineCount(){
+		lineCount++;
 	}
 
 	/**

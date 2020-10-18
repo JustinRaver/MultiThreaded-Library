@@ -4,15 +4,12 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.HashSet;
 import java.util.Scanner;
-import java.util.concurrent.Callable;
 
 public class BookProcessor {
-    private final int numBooksProcessed;
     private HashSet<String> invalidSet;
     private long executionTime;
 
     public BookProcessor(){
-        numBooksProcessed = 0;
         invalidSet = null;
         executionTime = 0;
     }
@@ -24,7 +21,7 @@ public class BookProcessor {
     /**
      *
      * @param fileName the name of the book being passed in
-     * @return
+     * @return HashSet of invalid words
      */
     public HashSet<String> createInvalidSet(String fileName){
         HashSet<String> set = new HashSet<>();
@@ -40,7 +37,7 @@ public class BookProcessor {
             }
             scan.close();
         } catch (FileNotFoundException e) {
-            e.toString();
+            System.out.println(e.toString());
         }
         invalidSet = set;
         return set;
@@ -66,12 +63,13 @@ public class BookProcessor {
                     str.setLength(0);
                     count = 0;
                 }
+                book.incrementLineCount();
             }
             scan.close();
             //execution time in milliseconds
             executionTime = (System.nanoTime()-executionTime)/1000000;
         } catch (FileNotFoundException e) {
-            e.toString();
+            System.out.println(e.toString());
         }
     }
 

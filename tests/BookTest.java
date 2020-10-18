@@ -29,6 +29,16 @@ class BookTest {
     }
 
     @Test
+    void getWordCount(){
+        assertEquals(0,book.getWordCount());
+    }
+
+    @Test
+    void getLineCount(){
+        assertEquals(0,book.getLineCount());
+    }
+
+    @Test
     void getTopWordList(){
         processor.createInvalidSet("invalid1.csv");
         processor.getBookData(book);
@@ -42,13 +52,8 @@ class BookTest {
     }
 
     @Test
-    void getWordCount(){
-        assertEquals(0,book.getTotalWordCount());
-    }
-
-    @Test
     void incrementWordCount(){
         book.incrementWordCount();
-        assertEquals(1,book.getTotalWordCount());
+        assertEquals(1,book.getWordCount());
     }
 }

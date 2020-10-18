@@ -1,6 +1,5 @@
 import Library.Book;
 import Library.BookProcessor;
-import Library.Library;
 import org.junit.jupiter.api.Test;
 
 import java.util.HashSet;
@@ -27,7 +26,7 @@ class BookProcessorTest {
         processor.createInvalidSet("invalid1.csv");
         processor.getBookData(book);
         //System.out.println(processor.getExecutionTime());
-        assertTrue(book.getTotalWordCount() > 0);
+        assertTrue(book.getWordCount() > 0);
     }
 
     @Test
@@ -38,6 +37,6 @@ class BookProcessorTest {
     @Test
     void countWords() {
         processor.cleanAndCount(s,book);
-        assertEquals(5,book.getTotalWordCount());
+        assertEquals(5,book.getWordCount());
     }
 }
