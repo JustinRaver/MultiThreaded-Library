@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.HashSet;
 import java.util.Scanner;
+import java.util.concurrent.Callable;
 
 public class BookProcessor {
     private final int numBooksProcessed;
@@ -19,6 +20,12 @@ public class BookProcessor {
     public long getExecutionTime(){
         return executionTime;
     }
+
+    /**
+     *
+     * @param fileName the name of the book being passed in
+     * @return
+     */
     public HashSet<String> createInvalidSet(String fileName){
         HashSet<String> set = new HashSet<>();
         try {
@@ -39,14 +46,26 @@ public class BookProcessor {
         return set;
     }
 
+    /**
+     *
+     * @param book text we want to process
+     */
     public void getBookData(Book book){
         try {
             Scanner scan = new Scanner(new File("resources/"+book.getFilename()));
             //Starting execution timer
             executionTime = System.nanoTime();
+            int count = 0;
             while(scan.hasNextLine()){
                 //non case sensitive word matching
-                countWords(cleanString(scan.nextLine().toLowerCase()), book);
+                StringBuilder str = new StringBuilder();
+                str.append(scan.nextLine().toLowerCase());
+                count++;
+                if(count == 100) {
+                    cleanAndCount(str.toString(), book);
+                    str.setLength(0);
+                    count = 0;
+                }
             }
             scan.close();
             //execution time in milliseconds
@@ -56,9 +75,10 @@ public class BookProcessor {
         }
     }
 
-    public static String cleanString(String str){
+
+    public void cleanAndCount(String str,Book book){
         str = str.replaceAll("[^a-zA-Z\\s]", "");
-        return str.replaceAll(" +", " ");
+        countWords(str.replaceAll(" +", " "),book);
     }
 
     public void countWords(String str, Book book){
@@ -71,4 +91,5 @@ public class BookProcessor {
             }
         }
     }
+
 }

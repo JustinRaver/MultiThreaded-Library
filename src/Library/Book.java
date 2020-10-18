@@ -30,7 +30,6 @@ public class Book {
 	private int totalWordCount;
 	private BufferedReader fileIn;
 	private final HashMap<String,Integer> bookData;
-	private final List<String> topWordList;
 
 	/**
 	 *
@@ -48,7 +47,6 @@ public class Book {
 		this.fileIn = null;
 		this.totalWordCount = 0;
 		this.bookData = new HashMap<>();
-		this.topWordList = new ArrayList<>();
 	}
 
 	// getters
@@ -69,9 +67,14 @@ public class Book {
 		return FILENAME;
 	}
 
-	public String getRELEASEDATE(){
+	public String getReleaseDate(){
 		return RELEASEDATE;
 	}
+
+	public HashMap<String,Integer> getBookData(){
+		return this.bookData;
+	}
+
 
 	//setters
 	public void incrementWordCount(){
@@ -87,7 +90,7 @@ public class Book {
 	/**
 	 *
 	 * @param k the k most common words in the HashMap
-	 * @return
+	 * @return List of the top k words
 	 */
 	public List<String> getTopWordList(int k){
 		List<String>[] bucket = new List[bookData.size()+1];
@@ -113,7 +116,7 @@ public class Book {
 	 *
 	 * @param s the string to be inserted into the hashmap
 	 */
-	public void addBookData(String s){
+	public synchronized void addBookData(String s){
 		bookData.put(s,bookData.getOrDefault(s,0)+1);
 		incrementWordCount();
 	}

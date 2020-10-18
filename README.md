@@ -22,7 +22,7 @@ Run the program
  
 ## Reflection (Project Development and Testing)
 
-This project was originally an assignment for my CS121. I have now extended it 
+This project was originally an assignment for my CS121 class. I have now extended it 
 to add functionality. Currently the project supports a GUI that loads books for 
 the user to view and has a non-functional Book stats panel. 
 

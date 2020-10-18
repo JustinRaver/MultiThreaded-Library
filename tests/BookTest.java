@@ -32,7 +32,9 @@ class BookTest {
     void getTopWordList(){
         processor.createInvalidSet("invalid1.csv");
         processor.getBookData(book);
-        System.out.println(book.getTopWordList(100).toString());
+        for(String s:book.getTopWordList(100)){
+            System.out.println(s+":"+book.getBookData().get(s));
+        }
     }
     @Test
     void isValid() {
