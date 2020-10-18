@@ -50,7 +50,7 @@ public class LibraryPanel extends JPanel {
 		 * scroll.
 		 */
 		JScrollPane bookListScrollPane = new JScrollPane(BOOKBUTTONPANEL);
-		bookListScrollPane.setBorder(BorderFactory.createTitledBorder("Library.Library.Book List"));
+		bookListScrollPane.setBorder(BorderFactory.createTitledBorder("Book List"));
 		bookListScrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
 		bookListScrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 		// creates panel for book imports

@@ -74,7 +74,7 @@ public class Library {
 		BOOKS.clear();
 
 		try {
-			Scanner fileScan = new Scanner(new File("etext/"+csvFilename));
+			Scanner fileScan = new Scanner(new File("resources/etext/"+csvFilename));
 
 			while (fileScan.hasNextLine()) {
 

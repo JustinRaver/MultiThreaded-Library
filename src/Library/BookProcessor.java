@@ -22,7 +22,7 @@ public class BookProcessor {
     public HashSet<String> createInvalidSet(String fileName){
         HashSet<String> set = new HashSet<>();
         try {
-            Scanner scan = new Scanner(new File("InvalidLists/"+fileName));
+            Scanner scan = new Scanner(new File("resources/InvalidLists/"+fileName));
             while(scan.hasNextLine()){
                 Scanner lineScan = new Scanner(scan.nextLine());
                 lineScan.useDelimiter(",");
@@ -41,7 +41,7 @@ public class BookProcessor {
 
     public void getBookData(Book book){
         try {
-            Scanner scan = new Scanner(new File(book.getFilename()));
+            Scanner scan = new Scanner(new File("resources/"+book.getFilename()));
             //Starting execution timer
             executionTime = System.nanoTime();
             while(scan.hasNextLine()){

@@ -133,7 +133,7 @@ public class Book {
 	public boolean isValid() {
 
 		if (TITLE != null && AUTHOR != null && GENRE != null && FILENAME != null) {
-			File file = new File(FILENAME);
+			File file = new File("resources/"+FILENAME);
 			return file.exists() && file.isFile();
 		}
 		return false;
@@ -148,7 +148,7 @@ public class Book {
 			return null;
 		} else {
 			try {
-				fileIn = new BufferedReader(new FileReader(FILENAME));
+				fileIn = new BufferedReader(new FileReader("resources/"+FILENAME));
 			} catch (IOException e) {
 				JOptionPane.showMessageDialog(null, "An error occurred with the reader");
 			}
