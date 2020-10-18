@@ -82,8 +82,30 @@ public class Book {
 		return bookData.keySet();
 	}
 
-	public List<String> getTopWordList(){
-		return topWordList;
+	/**
+	 *
+	 * @param k the k most common words in the HashMap
+	 * @return
+	 */
+	public List<String> getTopWordList(int k){
+		List<String>[] bucket = new List[bookData.size()+1];
+		for(Map.Entry<String,Integer> set: bookData.entrySet()){
+			int frequency = set.getValue();
+			if(bucket[frequency] == null){
+				bucket[frequency]= new ArrayList<>();
+			}
+			bucket[frequency].add(set.getKey());
+		}
+		List<String> retSet = new ArrayList<>();
+		for(int i= bucket.length-1;i>=0;i--){
+			if(bucket[i] != null){
+				Collections.sort(bucket[i]);
+				for(int j=0;j<bucket[i].size() && retSet.size()<k;j++){
+					retSet.add(bucket[i].get(j));
+				}
+			}
+		}
+		return retSet;
 	}
 	/**
 	 *

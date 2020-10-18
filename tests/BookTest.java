@@ -3,6 +3,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class BookTest {
+    BookProcessor processor = new BookProcessor();
     Book book = new Book("ALICE'S ADVENTURES IN WONDERLAND","Lewis Carroll","Adventure","1865","etext/Alice-in-Wonderland.txt");
     @Test
     void getTitle() {
@@ -24,6 +25,12 @@ class BookTest {
         assertEquals("etext/Alice-in-Wonderland.txt",book.getFilename());
     }
 
+    @Test
+    void getTopWordList(){
+        processor.createInvalidSet("invalid1.csv");
+        processor.getBookData(book);
+        System.out.println(book.getTopWordList(100).toString());
+    }
     @Test
     void isValid() {
         assertTrue(book.isValid());
