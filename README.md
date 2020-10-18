@@ -1,21 +1,20 @@
  
-# Project #: Main.ReaderOfBooks 
+# Project: MultiThreaded Library
+
 * Author: Justin Raver
-* Class: CS121 Section #03
-* Semester: Spring 2019
 
 ## Overview
 
-This program creates a Java GUI for a simple Library.Library. This 
+This program creates a Java GUI for a simple Library. This 
 library allows you to load a file from csv and view the corresponding 
-books in the shape of BookButtons. Once the file is loaded you can 
-select the books and view their material in the Reader area. 
+books. It now supports a serial book processor that shows book word 
+stats and allows the user to input a list of invalid words to ignore.
 
 ## Compiling and Running
 
- All project files should be in the same directory.
+From src directory:
  
- From the directory containing the .java source code, compile the driver class:
+From the directory containing the .java source code, compile the driver class:
     $ javac Main.ReaderOfBooks.javac
 
 Run the program
@@ -23,29 +22,20 @@ Run the program
  
 ## Reflection (Project Development and Testing)
 
-The Main.ReaderOfBooks project has been an excellent test of patience and problem solving. 
-I consistently struggled with this project. My first large stumble was with the 
-BookButtonListener and how to pass the listener to from a toplevel class to a sub class 
-GUI.LibraryPanel. I was able to resolve the Action listener by passing in through the
-constructor of GUI.LibraryPanel and creating an instance of ActionListener set equal to 
-the listener passed through the library panel constructor. I also struggled with the 
-alignment of the BookButtons,the JLabels, and other components within the GUI. 
-Through reading the Java api I was able to resolve my style issues. 
+This project was originally an assignment for my CS121. I have now extended it 
+to add functionality. Currently the project supports a GUI that loads books for 
+the user to view and has a non-functional Book stats panel. 
 
-The adjustment listener was interesting because it used so many unique methods to 
-achieve its desired results. I used a notebook to write out the logic of the listener
-and then uses print statements to test the output of the different methods. Once I had 
-that information I was able to easily implement the methods and get the correct page 
-numbers. I also added my enable disable if else statements for the page up and down logic
-in the scrollBarListener so that it was automatically updated. 
+My intention is to take the serial book processor that I have created, optimize it, and then 
+parallelize it. I will be timing both the serial and parallel portions to model the speedup
+that occurs and use it as a learning exercise.
 
-I tested the project consistently both with the front end and back end aspects. I realized 
-quickly that building from the largest components to the smallest made the GUI the easiest 
-for me because I could test the implementation immediately. I used both the BookTesterUnit 
-and LibraryTesterUnit to test my library and new csv method. I used print statements to test 
-the output of methods and then implement them. 
+## Testing
 
-Interfaces helped to Implement the new methods. 
+In this project version I have implemented unit tests using JUnit to further my knowledge
+of the testing framework. So far I have found the framework to be very straight forward  
+and helpful especially when running into issues refactoring existing code. These tests
+will be very useful while transitioning the code from serial to parallel. 
 
 ## Sources used
 
