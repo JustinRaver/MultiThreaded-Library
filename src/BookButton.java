@@ -39,7 +39,7 @@ public class BookButton extends JButton {
 
 	/**
 	 *
-	 * @return Book
+	 * @return Book the book connected to this button
 	 */
 	public Book getButtonBook() {
 		return BOOK;

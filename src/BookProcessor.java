@@ -27,7 +27,9 @@ public class BookProcessor {
                 while(lineScan.hasNext()){
                     set.add(lineScan.next().toLowerCase());
                 }
+                lineScan.close();
             }
+            scan.close();
         } catch (FileNotFoundException e) {
             e.toString();
         }
@@ -44,6 +46,7 @@ public class BookProcessor {
                 //non case sensitive word matching
                 countWords(cleanString(scan.nextLine().toLowerCase()), book);
             }
+            scan.close();
             //execution time in milliseconds
             executionTime = (System.nanoTime()-executionTime)/1000000;
         } catch (FileNotFoundException e) {
@@ -66,6 +69,4 @@ public class BookProcessor {
             }
         }
     }
-
-
 }

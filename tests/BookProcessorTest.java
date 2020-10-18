@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class BookProcessorTest {
     BookProcessor processor = new BookProcessor();
     Book book = new Book("ALICE'S ADVENTURES IN WONDERLAND","Lewis Carroll","Adventure","1865","etext/Alice-in-Wonderland.txt");
-    Book book2 = new Book("The Iliad of Homer","Homer","Fiction","750BCE","etext/The-Iliad-of-Homer.txt");
+    //Book book2 = new Book("The Iliad of Homer","Homer","Fiction","750BCE","etext/The-Iliad-of-Homer.txt");
 
     String s = "the, dog: =+ a[;e and the &090";
     @Test

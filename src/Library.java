@@ -53,11 +53,7 @@ public class Library {
 	 * @return the book object at index of the ArrayList
 	 */
 	public Book getBook(int index) {
-		if (index >= 0 && index <= BOOKS.size() - 1) {
-			return BOOKS.get(index);
-		} else {
-			return null;
-		}
+		return (index >= 0 && index <= BOOKS.size() - 1) ? BOOKS.get(index):null;
 	}
 
 	public String toString() {
