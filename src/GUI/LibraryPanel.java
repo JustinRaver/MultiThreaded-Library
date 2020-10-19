@@ -9,14 +9,12 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 /**
- * Panels.LibraryPanel extends JPanel and is the blue print for a panel With a
+ * extends JPanel and is the blue print for a panel With a
  * JScrollPane for bookButtons and an ImportBooks panel containing a JTextField
  * for File entry and a Load Button to load the desired file. Files are loaded
  * using the csvLoad method from Library.Library and sends and error message to user if
  * invalid input is entered. BorderLayout is used for style purposes along with
  * Titled Borders. The BookButtons are stacked using a GridLayout.
- * 
- * CS-121-Version 1.0- Spring 2019
  * 
  * @author Justin Raver
  */
@@ -36,9 +34,11 @@ public class LibraryPanel extends JPanel {
 	public LibraryPanel(ActionListener myListener) {
 		// sets ActionListener instance to the BOOKBUTTONLISTENER in Panels.ReaderOfBooksPanel.
 		this.BOOKBUTTONLISTENER = myListener;
+
 		// sets the layout of Panels.LibraryPanel and adds a titled border
 		this.setLayout(new BorderLayout());
 		this.setBorder(BorderFactory.createTitledBorder("Library"));
+
 		// creates new library object to add book objects to
 		MYLIBRARY = new Library();
 		// creates a JPanel for the BookButtons and sets layout to GridLayout
@@ -54,6 +54,7 @@ public class LibraryPanel extends JPanel {
 		bookListScrollPane.setBorder(BorderFactory.createTitledBorder("Book List"));
 		bookListScrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
 		bookListScrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+
 		// creates panel for book imports
 		JPanel importBookPanel = new JPanel();
 		importBookPanel.setBorder(BorderFactory.createTitledBorder("Import Books"));
@@ -66,9 +67,9 @@ public class LibraryPanel extends JPanel {
 		loadButton.addActionListener(new LoadButtonListener());
 		loadButton.setToolTipText("Load your desired CSV file");
 		importBookPanel.add(loadButton);
-		// adds the bookListScrollPane to Panels.LibraryPanel
+
+		// adds to Panels.LibraryPanel
 		this.add(bookListScrollPane, BorderLayout.CENTER);
-		// adds the importBookPanel to Panels.LibraryPanel
 		this.add(importBookPanel, BorderLayout.SOUTH);
 
 	}

@@ -15,8 +15,6 @@ import java.awt.event.ActionListener;
  * in the Panels.LibraryPanel and sets the content, title, and author when the
  * BookButtons are clicked.
  * 
- * CS-121-Version 1.0- Spring 2019
- * 
  * @author Justin Raver
  */
 
