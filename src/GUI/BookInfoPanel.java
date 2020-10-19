@@ -69,4 +69,17 @@ public class BookInfoPanel extends JPanel {
         NumberFormat numForm = NumberFormat.getInstance(Locale.US);
         this.WORDCOUNTFIELD.setText("Total Words: "+numForm.format(book.getWordCount()));
     }
+
+    public void setWORDAREA(Book book){
+        BOOKDATAPANEL.removeAll();
+        for(String s:book.getTopWordList(100)){
+            WordButton button = new WordButton(DATALOADLISTENER,s+ ": "+ book.getBookData().get(s));
+            button.setPreferredSize(new Dimension(230, 40));
+            button.setMaximumSize(new Dimension(230, 40));
+            button.setAlignmentX(CENTER_ALIGNMENT);
+            BOOKDATAPANEL.add(button);
+            revalidate();
+            repaint();
+        }
+    }
 }

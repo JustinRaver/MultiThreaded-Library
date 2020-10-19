@@ -73,6 +73,7 @@ public class ReaderOfBooksPanel extends JPanel {
 			}
 			INFOPANEL.setLINECOUNTFIELD(((BookButton) e.getSource()).getButtonBook());
 			INFOPANEL.setWORDCOUNTFIELD(((BookButton) e.getSource()).getButtonBook());
+			INFOPANEL.setWORDAREA(((BookButton) e.getSource()).getButtonBook());
 		}
 	}
 }
