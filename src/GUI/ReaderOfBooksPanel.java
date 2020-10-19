@@ -42,7 +42,7 @@ public class ReaderOfBooksPanel extends JPanel {
 		// creates readerPanel and add this subPanel to Panels.ReaderOfBooksPanel.
 		READERPANEL = new ReaderPanel();
 		this.add(READERPANEL, BorderLayout.CENTER);
-		INFOPANEL = new BookInfoPanel(new BookButtonListener());
+		INFOPANEL = new BookInfoPanel();
 		this.add(INFOPANEL,BorderLayout.EAST);
 	}
 
