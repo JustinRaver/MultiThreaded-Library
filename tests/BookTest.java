@@ -45,6 +45,7 @@ class BookTest {
         for(String s:book.getTopWordList(100)){
             System.out.println(s+":"+book.getBookData().get(s));
         }
+        assertEquals(book.getTopWordList(100).size(),100);
     }
     @Test
     void isValid() {
