@@ -52,17 +52,17 @@ public class BookProcessor {
             Scanner scan = new Scanner(new File("resources/"+book.getFilename()));
             //Starting execution timer
             executionTime = System.nanoTime();
-            int count = 0;
+//            int count = 0;
             while(scan.hasNextLine()){
                 //non case sensitive word matching
-                StringBuilder str = new StringBuilder();
-                str.append(scan.nextLine().toLowerCase());
-                count++;
-                if(count == 100) {
-                    cleanAndCount(str.toString(), book);
-                    str.setLength(0);
-                    count = 0;
-                }
+//                StringBuilder str = new StringBuilder();
+//                str.append(scan.nextLine().toLowerCase());
+//                count++;
+//                if(count == 100) {
+                    cleanAndCount(scan.nextLine().toLowerCase(), book);
+//                    str.setLength(0);
+//                    count = 0;
+//                }
                 book.incrementLineCount();
             }
             scan.close();

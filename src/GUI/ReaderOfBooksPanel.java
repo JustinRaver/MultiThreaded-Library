@@ -1,5 +1,8 @@
 package GUI;
 
+import Library.Book;
+import Library.BookProcessor;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -65,6 +68,12 @@ public class ReaderOfBooksPanel extends JPanel {
 			READERPANEL.setContentArea(((BookButton) e.getSource()).getButtonBook());
 			// sets the scrollPane to the top of the current book
 			READERPANEL.getContentScrollPane().getVerticalScrollBar().setValue(0);
+			if(((BookButton) e.getSource()).getButtonBook().getWordCount() <= 0) {
+				BookProcessor processor = new BookProcessor();
+				processor.getBookData(((BookButton) e.getSource()).getButtonBook());
+			}
+			INFOPANEL.setLINECOUNTFIELD(((BookButton) e.getSource()).getButtonBook());
+			INFOPANEL.setWORDCOUNTFIELD(((BookButton) e.getSource()).getButtonBook());
 		}
 	}
 }

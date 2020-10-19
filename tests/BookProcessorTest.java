@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class BookProcessorTest {
     BookProcessor processor = new BookProcessor();
-    Book book = new Book("ALICE'S ADVENTURES IN WONDERLAND","Lewis Carroll","Adventure","1865","etext/Alice-in-Wonderland.txt");
+    Book book = new Book("In Search of Lost Time","Marcel Proust","Modern","1913","etext/In-Search-of-Lost-Time.txt");
 
     String s = "the, dog: =+ a[;e and the &090";
     @Test
@@ -25,7 +25,7 @@ class BookProcessorTest {
     void getBookData(){
         processor.createInvalidSet("invalid1.csv");
         processor.getBookData(book);
-        //System.out.println(processor.getExecutionTime());
+        System.out.println(processor.getExecutionTime());
         assertTrue(book.getWordCount() > 0);
     }
 
