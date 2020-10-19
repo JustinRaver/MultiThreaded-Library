@@ -1,6 +1,5 @@
 package GUI;
 
-import Library.Book;
 import Library.BookProcessor;
 
 import javax.swing.*;

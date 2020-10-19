@@ -5,6 +5,8 @@ import Library.Book;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
+import java.text.NumberFormat;
+import java.util.Locale;
 
 /**
  *
@@ -59,10 +61,12 @@ public class BookInfoPanel extends JPanel {
     }
 
     public void setLINECOUNTFIELD(Book book){
-        this.LINECOUNTFIELD.setText("Total Lines: "+book.getLineCount());
+        NumberFormat numForm = NumberFormat.getInstance(Locale.US);
+        this.LINECOUNTFIELD.setText("Total Lines: "+numForm.format(book.getLineCount()));
     }
 
     public void setWORDCOUNTFIELD(Book book){
-        this.WORDCOUNTFIELD.setText("Total Words: "+book.getWordCount());
+        NumberFormat numForm = NumberFormat.getInstance(Locale.US);
+        this.WORDCOUNTFIELD.setText("Total Words: "+numForm.format(book.getWordCount()));
     }
 }
