@@ -48,6 +48,7 @@ public class BookProcessor {
      * @param book text we want to process
      */
     public void getBookData(Book book){
+        createInvalidSet("invalid1.csv");
         try {
             Scanner scan = new Scanner(new File("resources/"+book.getFilename()));
             //Starting execution timer

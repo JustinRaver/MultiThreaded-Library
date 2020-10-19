@@ -37,9 +37,10 @@ public class BookInfoPanel extends JPanel {
         BOOKDATAPANEL = new JPanel();
         BOOKDATAPANEL.setLayout(new BoxLayout(BOOKDATAPANEL, BoxLayout.Y_AXIS));
         JScrollPane bookDataScrollPane = new JScrollPane(BOOKDATAPANEL);
-        bookDataScrollPane.setBorder(BorderFactory.createTitledBorder("Book Stats"));
+        bookDataScrollPane.setBorder(BorderFactory.createTitledBorder("Top 100 words"));
         bookDataScrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
         bookDataScrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+        bookDataScrollPane.getVerticalScrollBar().setBlockIncrement(100);
 
         //bookDataScrollPane.add(WORDAREA,BorderLayout.SOUTH);
 
@@ -73,7 +74,7 @@ public class BookInfoPanel extends JPanel {
     public void setWORDAREA(Book book){
         BOOKDATAPANEL.removeAll();
         for(String s:book.getTopWordList(100)){
-            WordButton button = new WordButton(DATALOADLISTENER,s+ ": "+ book.getBookData().get(s));
+            WordButton button = new WordButton(null,s+ ":   "+ book.getBookData().get(s));
             button.setPreferredSize(new Dimension(230, 40));
             button.setMaximumSize(new Dimension(230, 40));
             button.setAlignmentX(CENTER_ALIGNMENT);
