@@ -112,12 +112,12 @@ public class Book {
 		//creates buckets from 0 to the greatest value in hashmap+1
 		List<String>[] bucket = new List[max+1];
 		//go thru the map and sort words into buckets based of the number of occurrences
-		for(Map.Entry<String,Integer> set: bookData.entrySet()){
-			int frequency = set.getValue();
+		for(String key: bookData.keySet()){
+			int frequency = bookData.get(key);
 			if(bucket[frequency] == null){
 				bucket[frequency]= new ArrayList<>();
 			}
-			bucket[frequency].add(set.getKey());
+			bucket[frequency].add(key);
 		}
 		//go from the end of the array and populate list from buckets until list is full
 		List<String> retSet = new ArrayList<>();
