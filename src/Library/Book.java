@@ -101,7 +101,17 @@ public class Book {
 	 * @return List of the top k words
 	 */
 	public List<String> getTopWordList(int k){
-		List<String>[] bucket = new List[bookData.size()+1];
+		int max = Integer.MIN_VALUE;
+		//go thru the hashmap and find the larges value in
+		//set of values
+		for(Integer i:bookData.values()){
+			if(i>max){
+				max = i;
+			}
+		}
+		//creates buckets from 0 to the greatest value in hashmap+1
+		List<String>[] bucket = new List[max+1];
+		//go thru the map and sort words into buckets based of the number of occurrences
 		for(Map.Entry<String,Integer> set: bookData.entrySet()){
 			int frequency = set.getValue();
 			if(bucket[frequency] == null){
@@ -109,6 +119,7 @@ public class Book {
 			}
 			bucket[frequency].add(set.getKey());
 		}
+		//go from the end of the array and populate list from buckets until list is full
 		List<String> retSet = new ArrayList<>();
 		for(int i= bucket.length-1;i>=0;i--){
 			if(bucket[i] != null){
