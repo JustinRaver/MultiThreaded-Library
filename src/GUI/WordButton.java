@@ -4,8 +4,16 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
 
+/**
+ * button object that stores text in formatted way
+ */
 public class WordButton extends JButton {
 
+    /**
+     *
+     * @param listener listener attached to button
+     * @param s s the text of the button
+     */
     public WordButton(ActionListener listener,String s){
         this.setFont(new Font("Arial", Font.PLAIN, 15));
         if (s.length() >= 20) {

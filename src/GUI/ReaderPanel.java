@@ -19,8 +19,6 @@ import java.io.IOException;
  * setter methods to communicate with other panels. BorderLayout is used for
  * style purposes along with Titled Borders.
  * 
- * CS-121-Version 1.0- Spring 2019
- * 
  * @author Justin Raver
  */
 

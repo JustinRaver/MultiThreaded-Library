@@ -13,8 +13,7 @@ import java.util.*;
  * all of the methods. A toString that prints books attributes. A isValid method
  * that checks that the attributes aren't null and the file exists. The class
  * implements BookInterface.
- * 
- * CS-121-Version 2.0 Spring 2019
+ *
  * 
  * @author Justin Raver
  */
@@ -76,6 +75,7 @@ public class Book {
 	public HashMap<String,Integer> getBookData(){
 		return this.bookData;
 	}
+
 	public int getWordCount(){ return wordCount;}
 
 	public int getLineCount(){
@@ -85,7 +85,6 @@ public class Book {
 	public Set<String> getWords(){
 		return bookData.keySet();
 	}
-
 
 	//setters
 	public void incrementWordCount(){
@@ -121,8 +120,8 @@ public class Book {
 		}
 		return retSet;
 	}
+
 	/**
-	 *
 	 * @param s the string to be inserted into the hashmap
 	 */
 	public synchronized void addBookData(String s){
@@ -131,7 +130,6 @@ public class Book {
 	}
 
 	/**
-	 *
 	 * @return String
 	 */
 	public String toString() {
@@ -152,7 +150,6 @@ public class Book {
 	}
 
 	/**
-	 *
 	 * @return bufferedReader
 	 */
 	public BufferedReader getReader() {

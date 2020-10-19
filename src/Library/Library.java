@@ -12,8 +12,7 @@ import java.util.Scanner;
  * addBooks,removeBook, and toString methods allow you to add books, get the
  * book locations in index form, remove book at a specific index, and print the
  * books in the ArrayList The class implements LibraryInterface.
- * 
- * CS-121-Version 2.0- Spring 2019
+ *
  * 
  * @author Justin Raver
  */
@@ -39,7 +38,6 @@ public class Library {
 	}
 
 	/**
-	 *
 	 * @param index removes book at this index
 	 */
 	public void removeBook(int index) {

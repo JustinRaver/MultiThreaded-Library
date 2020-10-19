@@ -13,8 +13,7 @@ import java.awt.event.ActionListener;
  * Text is set to the book title and truncated if the title is larger than 20
  * characters. This class has a getButtonBook method that returns the book
  * associated with that button.
- * 
- * CS-121-Version 1.0- Spring 2019
+ *
  * 
  * @author Justin Raver
  */

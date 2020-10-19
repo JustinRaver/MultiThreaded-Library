@@ -4,7 +4,6 @@ import Library.Book;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionListener;
 import java.text.NumberFormat;
 import java.util.Locale;
 
@@ -22,7 +21,7 @@ public class BookInfoPanel extends JPanel {
      * which contains a book stats panel and wordlist panel
      */
     public BookInfoPanel(){
-        //setslayout for top level panel
+        //sets layout for top level panel
         this.setLayout(new BorderLayout());
         this.setBorder(BorderFactory.createTitledBorder("Book Data"));
 
@@ -86,7 +85,7 @@ public class BookInfoPanel extends JPanel {
 
     /**
      * Sets all attributes for BookInfoPanel
-     * @param book
+     * @param book the book the user wants to view
      */
     public void setAttributes(Book book){
         this.setLINECOUNTFIELD(book);
