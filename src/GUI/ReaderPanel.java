@@ -38,31 +38,40 @@ public class ReaderPanel extends JPanel {
 		// sets layout to border layout and adds titled border
 		this.setLayout(new BorderLayout());
 		this.setBorder(BorderFactory.createTitledBorder("Reader"));
+
 		// creates information panel, adds labels and sets titled border
 		// private class instances
 		JPanel informationPanel = new JPanel();
 		informationPanel.setBorder(BorderFactory.createTitledBorder("Information"));
+
+		//creates title label and adds to the information panel
 		TITLELABEL = new JLabel("Title:");
 		TITLELABEL.setPreferredSize(new Dimension(300, 20));
 		informationPanel.add(TITLELABEL);
+		//creates bylabel and adds to the information panel
 		BYLABEL = new JLabel("By:");
 		BYLABEL.setPreferredSize(new Dimension(150, 20));
 		informationPanel.add(BYLABEL);
+		//creates page label and adds to information panel
 		PAGELABEL = new JLabel("Page:");
 		PAGELABEL.setPreferredSize(new Dimension(100, 20));
 		informationPanel.add(PAGELABEL);
 		this.add(informationPanel, BorderLayout.NORTH);
+
 		// creates the contentField and sets margins to center book text
 		CONTENTAREA = new JTextArea();
 		CONTENTAREA.setMargin(new Insets(10, 80, 10, 10));
+
 		// creates content scrollPane for books display and sets titled border
 		CONTENTSCROLLPANE = new JScrollPane(CONTENTAREA);
 		CONTENTSCROLLPANE.getVerticalScrollBar().addAdjustmentListener(new ContentAdjustmentListener());
 		CONTENTSCROLLPANE.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
 		CONTENTSCROLLPANE.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 		CONTENTSCROLLPANE.setBorder(BorderFactory.createTitledBorder("Content"));
+
 		// adds the content scroll pane to the reader panel
 		this.add(CONTENTSCROLLPANE, BorderLayout.CENTER);
+
 		// creates the navigation panel for page up and down and sets titled border
 		JPanel navigationPanel = new JPanel();
 		navigationPanel.setBorder(BorderFactory.createTitledBorder("Navigation"));
