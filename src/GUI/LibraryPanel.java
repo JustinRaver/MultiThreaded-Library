@@ -89,9 +89,6 @@ public class LibraryPanel extends JPanel {
 			MYLIBRARY.loadLibraryFromCSV(FILEENTRYFIELD.getText());
 			for (Book thisBook : MYLIBRARY.getBooks()) {
 				BookButton bookButton = new BookButton(thisBook, BOOKBUTTONLISTENER);
-				bookButton.setPreferredSize(new Dimension(230, 40));
-				bookButton.setMaximumSize(new Dimension(230, 40));
-				bookButton.setAlignmentX(CENTER_ALIGNMENT);
 				BOOKBUTTONPANEL.add(bookButton);
 				revalidate();
 				repaint();

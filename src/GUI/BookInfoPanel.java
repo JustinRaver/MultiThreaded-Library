@@ -78,9 +78,6 @@ public class BookInfoPanel extends JPanel {
         BOOKDATAPANEL.removeAll();
         for(String s:book.getTopWordList(100)){
             WordButton button = new WordButton(null,s+ ":   "+ book.getBookData().get(s));
-            button.setPreferredSize(new Dimension(230, 40));
-            button.setMaximumSize(new Dimension(230, 40));
-            button.setAlignmentX(CENTER_ALIGNMENT);
             BOOKDATAPANEL.add(button);
             revalidate();
             repaint();

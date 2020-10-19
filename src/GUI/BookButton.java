@@ -38,6 +38,10 @@ public class BookButton extends JButton {
 		} else {
 			this.setText(myBook.getTitle().toUpperCase());
 		}
+		//sets the attributes
+		this.setPreferredSize(new Dimension(230, 40));
+		this.setMaximumSize(new Dimension(230, 40));
+		this.setAlignmentX(CENTER_ALIGNMENT);
 		this.addActionListener(myListener);
 		this.setToolTipText(myBook.getTitle().toUpperCase());
 	}
