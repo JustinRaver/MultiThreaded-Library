@@ -9,7 +9,7 @@ import java.text.NumberFormat;
 import java.util.Locale;
 
 /**
- *This clas represents a BookInfor panel to be used in coordination with the Library
+ *This class represents a BookInfo panel to be used in coordination with the Library
  * panel to load book data when users click on book buttons
  */
 public class BookInfoPanel extends JPanel {
@@ -85,5 +85,15 @@ public class BookInfoPanel extends JPanel {
             revalidate();
             repaint();
         }
+    }
+
+    /**
+     * Sets all attributes for BookInfoPanel
+     * @param book
+     */
+    public void setAttributes(Book book){
+        this.setLINECOUNTFIELD(book);
+        this.setWORDCOUNTFIELD(book);
+        this.setWORDAREA(book);
     }
 }

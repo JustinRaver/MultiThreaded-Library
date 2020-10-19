@@ -151,14 +151,14 @@ public class ReaderPanel extends JPanel {
 	 * method getReader to set the content area text to the book text.This method
 	 * catches invalid files and returns a message to the user.
 	 * 
-	 * @param myBook the book object being passed to the library reader pane
+	 * @param book the book object being passed to the library reader pane
 	 */
-	public void setContentArea(Book myBook) {
-		if (myBook.getReader() == null) {
+	public void setContentArea(Book book) {
+		if (book.getReader() == null) {
 			JOptionPane.showMessageDialog(null, "Your file could not be found");
 		} else {
 			try {
-				this.CONTENTAREA.read(myBook.getReader(), null);
+				this.CONTENTAREA.read(book.getReader(), null);
 			} catch (IOException e) {
 				JOptionPane.showMessageDialog(null, "An error occured with the reader");
 			}
@@ -166,22 +166,28 @@ public class ReaderPanel extends JPanel {
 	}
 
 	/**
-	 * This method takes in book objects as a parameter then uses the book class
-	 * method getTitle to set the text of titleLabel to the book title.
-	 * 
-	 * @param thisBook Library.Library.Book being passed to the title label
+
+	 * @param book book being passed to the title label
 	 */
-	public void setTitleLabel(Book thisBook) {
-		this.TITLELABEL.setText("Title: " + thisBook.getTitle());
+	public void setTitleLabel(Book book) {
+		this.TITLELABEL.setText("Title: " + book.getTitle());
 	}
 
 	/**
-	 * This method takes in book objects as a parameter then uses the book class
-	 * method getAuthor to set the text of byLabel to the books author.
-	 * 
-	 * @param thisBook Library.Library.Book object used to set the author label
+	 * @param book book object used to set the author label
 	 */
-	public void setByLabel(Book thisBook) {
-		this.BYLABEL.setText("By: " + thisBook.getAuthor());
+	public void setByLabel(Book book) {
+		this.BYLABEL.setText("By: " + book.getAuthor());
+	}
+
+	/**
+	 * sets all Reader panel attributes
+	 * @param book the book we want to set
+	 */
+	public void setAttributes(Book book){
+		this.setByLabel(book);
+		this.setContentArea(book);
+		this.setTitleLabel(book);
+		this.getContentScrollPane().getVerticalScrollBar().setValue(0);
 	}
 }
