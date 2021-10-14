@@ -1,23 +1,24 @@
-import Library.Library;
 import Library.Book;
+import Library.Library;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 class LibraryTest {
     Library library = new Library();
-    Book book = new Book("ALICE'S ADVENTURES IN WONDERLAND","Lewis Carroll","Adventure","1865","etext/Alice-in-Wonderland.txt");
+    Book book = new Book("ALICE'S ADVENTURES IN WONDERLAND", "Lewis Carroll", "Adventure", "1865", "etext/Alice-in-Wonderland.txt");
 
     @Test
     void getBooks() {
         library.addBook(book);
-        assertEquals(book,library.getBook(0));
+        assertEquals(book, library.getBook(0));
     }
 
     @Test
     void addBook() {
         library.addBook(book);
-        assertEquals(book,library.getBook(0));
+        assertEquals(book, library.getBook(0));
     }
 
     @Test
@@ -30,12 +31,12 @@ class LibraryTest {
     @Test
     void getBook() {
         library.addBook(book);
-        assertEquals(book,library.getBook(0));
+        assertEquals(book, library.getBook(0));
     }
 
     @Test
     void loadLibraryFromCSV() {
         library.loadLibraryFromCSV("booklist.csv");
-        assertEquals(3,library.getBooks().size());
+        assertEquals(3, library.getBooks().size());
     }
 }

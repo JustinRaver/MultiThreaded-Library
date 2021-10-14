@@ -12,39 +12,39 @@ public class BookProcessor {
     /**
      * constructor for book processor
      */
-    public BookProcessor(){
+    public BookProcessor() {
         invalidSet = null;
         executionTime = 0;
     }
 
     //getters
 
-    public long getExecutionTime(){
+    public long getExecutionTime() {
         return executionTime;
     }
 
     /**
-     *automatically loads an invalid set of the top 100 english words
+     * automatically loads an invalid set of the top 100 english words
      * according to wikipedia
      *
      * @param book the book we want to process
      */
-    public void getBookData(Book book){
+    public void getBookData(Book book) {
         createInvalidSet("invalid1.csv");
         try {
-            Scanner scan = new Scanner(new File("resources/"+book.getFilename()));
+            Scanner scan = new Scanner(new File("resources/" + book.getFilename()));
             //Starting execution timer
             executionTime = System.nanoTime();
-            while(scan.hasNextLine()){
+            while (scan.hasNextLine()) {
                 //not case sensitive
                 cleanAndCount(scan.nextLine().toLowerCase(), book);
                 book.incrementLineCount();
             }
             scan.close();
             //execution time in milliseconds
-            executionTime = (System.nanoTime()-executionTime)/1000000;
+            executionTime = (System.nanoTime() - executionTime) / 1000000;
         } catch (FileNotFoundException e) {
-            System.out.println(e.toString());
+            System.out.println(e);
         }
     }
 
@@ -52,21 +52,21 @@ public class BookProcessor {
      * @param fileName the name of the book being passed in
      * @return HashSet of invalid words
      */
-    public HashSet<String> createInvalidSet(String fileName){
+    public HashSet<String> createInvalidSet(String fileName) {
         HashSet<String> set = new HashSet<>();
         try {
-            Scanner scan = new Scanner(new File("resources/InvalidLists/"+fileName));
-            while(scan.hasNextLine()){
+            Scanner scan = new Scanner(new File("resources/InvalidLists/" + fileName));
+            while (scan.hasNextLine()) {
                 Scanner lineScan = new Scanner(scan.nextLine());
                 lineScan.useDelimiter(",");
-                while(lineScan.hasNext()){
+                while (lineScan.hasNext()) {
                     set.add(lineScan.next().toLowerCase());
                 }
                 lineScan.close();
             }
             scan.close();
         } catch (FileNotFoundException e) {
-            System.out.println(e.toString());
+            System.out.println(e);
         }
         invalidSet = set;
         return set;
@@ -74,26 +74,24 @@ public class BookProcessor {
 
 
     /**
-     *
-     * @param str the string to be cleaned and that added to the books word hashmap
+     * @param str  the string to be cleaned and that added to the books word hashmap
      * @param book the book containing the string
      */
-    public void cleanAndCount(String str,Book book){
+    public void cleanAndCount(String str, Book book) {
         str = str.replaceAll("[^a-zA-Z\\s]", "");
-        countWords(str.replaceAll(" +", " "),book);
+        countWords(str.replaceAll(" +", " "), book);
     }
 
     /**
-     *
-     * @param str the string to be counted
+     * @param str  the string to be counted
      * @param book the book containing the string
      */
-    public void countWords(String str, Book book){
-        for(String s:str.split(" ")){
-            if(s.equals("")){
+    public void countWords(String str, Book book) {
+        for (String s : str.split(" ")) {
+            if (s.equals("")) {
                 continue;
             }
-            if(invalidSet == null || !invalidSet.contains(s)) {
+            if (invalidSet == null || !invalidSet.contains(s)) {
                 book.addBookData(s);
             }
         }
