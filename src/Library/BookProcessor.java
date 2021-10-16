@@ -36,9 +36,13 @@ public class BookProcessor {
             //Starting execution timer
             executionTime = System.nanoTime();
             while (scan.hasNextLine()) {
-                //not case sensitive
-                cleanAndCount(scan.nextLine().toLowerCase(), book);
-                book.incrementLineCount();
+                //not case-sensitive
+                String line = scan.nextLine().trim().toLowerCase();
+
+                if (line.length() != 0) {
+                    cleanAndCount(line, book);
+                    book.incrementLineCount();
+                }
             }
             scan.close();
             //execution time in milliseconds

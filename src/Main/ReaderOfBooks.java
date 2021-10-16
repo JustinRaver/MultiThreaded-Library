@@ -3,6 +3,7 @@ package Main;
 import GUI.ReaderOfBooksPanel;
 
 import javax.swing.*;
+import java.awt.*;
 
 /**
  * This panel is the main Driver Panel for the reader of books project and is
@@ -18,6 +19,7 @@ public class ReaderOfBooks {
     public static void main(String[] args) {
         // Creates new JFrame and then sets close operation for user Exit
         JFrame frame = new JFrame("Reader of Books");
+        frame.setPreferredSize(new Dimension(1200, 900));
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         // Creates Panels.ReaderOfBooksPanel and adds the panel to the JFrame
         ReaderOfBooksPanel panel = new ReaderOfBooksPanel();

@@ -61,11 +61,18 @@ public class ReaderOfBooksPanel extends JPanel {
             // sets the reader panel attributes
             Book book = ((BookButton) e.getSource()).getButtonBook();
             READERPANEL.setAttributes(book);
+
             if (book.getWordCount() <= 0) {
+                // Create a new book processor and process each book
                 BookProcessor processor = new BookProcessor();
-                processor.getBookData(book);
+                // create a new thread to do the book processing and continue
+                new Thread(() -> {
+                    processor.getBookData(book);
+                    INFOPANEL.setAttributes(book);
+                }).start();
+            } else {
+                INFOPANEL.setAttributes(book);
             }
-            INFOPANEL.setAttributes(book);
         }
     }
 }

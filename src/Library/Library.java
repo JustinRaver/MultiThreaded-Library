@@ -71,6 +71,7 @@ public class Library {
         BOOKS.clear();
 
         try {
+            // expects booklist.csv or booklist-full.csv
             Scanner fileScan = new Scanner(new File("resources/etext/" + csvFilename));
 
             while (fileScan.hasNextLine()) {
@@ -79,6 +80,7 @@ public class Library {
                 lineScan.useDelimiter(",");
                 //creating book object using csv data
                 Book csvBook = new Book(lineScan.next(), lineScan.next(), lineScan.next(), lineScan.next(), lineScan.next());
+
                 BOOKS.add(csvBook);
 
                 lineScan.close();
