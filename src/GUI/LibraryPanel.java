@@ -9,7 +9,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 /**
- * extends JPanel and is the blue print for a panel With a
+ * extends JPanel and is the blueprint for a panel With a
  * JScrollPane for bookButtons and an ImportBooks panel containing a JTextField
  * for File entry and a Load Button to load the desired file. Files are loaded
  * using the csvLoad method from Library.Library and sends and error message to user if

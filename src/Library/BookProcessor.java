@@ -48,7 +48,7 @@ public class BookProcessor {
             //execution time in milliseconds
             executionTime = (System.nanoTime() - executionTime) / 1000000;
         } catch (FileNotFoundException e) {
-            System.out.println(e);
+            e.printStackTrace();
         }
     }
 
@@ -70,7 +70,7 @@ public class BookProcessor {
             }
             scan.close();
         } catch (FileNotFoundException e) {
-            System.out.println(e);
+            e.printStackTrace();
         }
         invalidSet = set;
         return set;

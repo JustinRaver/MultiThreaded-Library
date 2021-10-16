@@ -52,7 +52,7 @@ public class BookInfoPanel extends JPanel {
     }
 
     /**
-     * @param book the book connected to the botton pushed by user
+     * @param book the book connected to the button pushed by user
      */
     public void setLINECOUNTFIELD(Book book) {
         NumberFormat numForm = NumberFormat.getInstance(Locale.US);
@@ -60,7 +60,7 @@ public class BookInfoPanel extends JPanel {
     }
 
     /**
-     * @param book the book connected to the botton pushed by user
+     * @param book the book connected to the button pushed by user
      */
     public void setWORDCOUNTFIELD(Book book) {
         NumberFormat numForm = NumberFormat.getInstance(Locale.US);
@@ -70,9 +70,9 @@ public class BookInfoPanel extends JPanel {
     /**
      * creates buttons to contain all 100 words in the top wordlist and number of occurrences
      *
-     * @param book the book connected to the botton pushed by user
+     * @param book the book connected to the button pushed by user
      */
-    public void setWORDAREA(Book book) {
+    public void setWordArea(Book book) {
         BOOKDATAPANEL.removeAll();
         for (String s : book.getTopWordList(100)) {
             WordButton button = new WordButton(null, s + ":   " + book.getBookData().get(s));
@@ -90,6 +90,6 @@ public class BookInfoPanel extends JPanel {
     public void setAttributes(Book book) {
         this.setLINECOUNTFIELD(book);
         this.setWORDCOUNTFIELD(book);
-        this.setWORDAREA(book);
+        this.setWordArea(book);
     }
 }

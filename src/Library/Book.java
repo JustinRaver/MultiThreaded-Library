@@ -10,7 +10,7 @@ import java.util.*;
 /**
  * This class is the blueprint for an object called Library.Library.Book with the attributes
  * title, author, genre, filename. The class includes getters and setters for
- * all of the methods. A toString that prints books attributes. A isValid method
+ * all the methods. A toString that prints books attributes. A isValid method
  * that checks that the attributes aren't null and the file exists. The class
  * implements BookInterface.
  *
@@ -101,16 +101,15 @@ public class Book {
      */
     public List<String> getTopWordList(int k) {
         int max = Integer.MIN_VALUE;
-        //go thru the hashmap and find the larges value in
-        //set of values
+        //go through the hashmap and find the largest value in set of values
         for (Integer i : bookData.values()) {
             if (i > max) {
                 max = i;
             }
         }
-        //creates buckets from 0 to the greatest value in hashmap+1
+        //Create buckets from 0 to the greatest value in hashmap+1
         List<String>[] bucket = new List[max + 1];
-        //go thru the map and sort words into buckets based of the number of occurrences
+        //go through the map and sort words into buckets based of the number of occurrences
         for (String key : bookData.keySet()) {
             int frequency = bookData.get(key);
             if (bucket[frequency] == null) {

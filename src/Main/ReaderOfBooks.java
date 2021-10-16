@@ -21,7 +21,7 @@ public class ReaderOfBooks {
         JFrame frame = new JFrame("Reader of Books");
         frame.setPreferredSize(new Dimension(1200, 900));
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        // Creates Panels.ReaderOfBooksPanel and adds the panel to the JFrame
+        // Create Panels.ReaderOfBooksPanel and adds the panel to the JFrame
         ReaderOfBooksPanel panel = new ReaderOfBooksPanel();
         frame.getContentPane().add(panel);
         // sizes frame for components

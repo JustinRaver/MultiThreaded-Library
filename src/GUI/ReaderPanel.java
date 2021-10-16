@@ -113,7 +113,7 @@ public class ReaderPanel extends JPanel {
             try {
                 this.CONTENTAREA.read(book.getReader(), null);
             } catch (IOException e) {
-                JOptionPane.showMessageDialog(null, "An error occured with the reader");
+                JOptionPane.showMessageDialog(null, "An error occurred with the reader");
             }
         }
     }

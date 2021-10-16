@@ -29,7 +29,7 @@ public class BookButton extends JButton {
     public BookButton(Book myBook, ActionListener myListener) {
         this.BOOK = myBook;
         this.setFont(new Font("Arial", Font.PLAIN, 15));
-        // truncates titles larger than 20 characters with the substring method
+        // Truncate titles larger than 20 characters with the substring method
         if (myBook.getTitle().length() >= 20) {
             this.setText(myBook.getTitle().toUpperCase().substring(0, 17) + "...");
         } else {

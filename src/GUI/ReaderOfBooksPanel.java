@@ -25,7 +25,7 @@ public class ReaderOfBooksPanel extends JPanel {
     private final BookInfoPanel INFOPANEL;
 
     /**
-     * reader of books contstructor
+     * reader of books constructor
      */
     public ReaderOfBooksPanel() {
         /*
